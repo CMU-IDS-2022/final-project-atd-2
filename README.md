@@ -2,7 +2,7 @@
 
 * **Online URL**: https://github.com/CMU-IDS-2022/final-project-atd-2
 * **Team members**:
-  * tkalia@andrew.cmu.edu 
+  * Contact person: tkalia@andrew.cmu.edu 
   * dpoddar@andrew.cmu.edu 
   * dhruvary@andrew.cmu.edu 
   * anami@andrew.cmu.edu 
