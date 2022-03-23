@@ -1,6 +1,6 @@
 # CMU Interactive Data Science Final Project
 
-* **Online URL**: TODO
+* **Online URL**: https://github.com/CMU-IDS-2022/final-project-atd-2
 * **Team members**:
   * tkalia@andrew.cmu.edu 
   * dpoddar@andrew.cmu.edu 
