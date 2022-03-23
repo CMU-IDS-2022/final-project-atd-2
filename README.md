@@ -2,7 +2,7 @@
 
 * **Online URL**: TODO
 * **Team members**:
-  * Contact person: tkalia@andrew.cmu.edu 
+  * tkalia@andrew.cmu.edu 
   * dpoddar@andrew.cmu.edu 
   * dhruvary@andrew.cmu.edu 
   * anami@andrew.cmu.edu 
