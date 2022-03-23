@@ -2,7 +2,7 @@
 
 **GitHub Repo URL**: https://github.com/CMU-IDS-2022/final-project-atd-2
 
-**Team Members:** <br/>
+**Team Members:**
 
 Trisha Kalia - <br/>
 Disha Poddar - <br/>
