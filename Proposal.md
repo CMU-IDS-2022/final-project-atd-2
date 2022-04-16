@@ -168,7 +168,7 @@ Show some screenshots of your data to demonstrate you have explored it.
 
 ## System Design
 How will you display your data? 
-- https://github.com/owid/energy-data: owid-energy-data.csv
+- https://github.com/owid/energy-data: owid-energy-data.csv. This includes data on energy consumption (primary energy, per capita, and growth rates), energy mix, electricity mix and other relevant metrics.
 
 Provide some sketches that you have for the system design:
 
