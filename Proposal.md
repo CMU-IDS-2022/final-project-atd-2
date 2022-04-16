@@ -36,7 +36,13 @@ We are going to look at a couple of different resources to get the data we need 
 - https://climate.nasa.gov/vital-signs/global-temperature/
 - https://www.kaggle.com/datasets/berkeleyearth/climate-change-earth-surface-temperature-data
 
-## Sketches and Data Analysis
-
 ## Conclusion
 Overall, we aim to uncover patterns of climate change and their impact. As well as, creating  a predictive model will hopefully help countries realize the drastic effect climate change will have. This absolutely necessary information to countries will allow them to make informed decisions with respect to avoiding or at least attempting to limit the dire consequences. 
+
+# Sketches and Data Analysis
+
+## Data Processing. 
+Do you have to do substantial data cleanup? What quantities do you plan to derive from your data? How will data processing be implemented?  Show some screenshots of your data to demonstrate you have explored it.
+
+## System Design. 
+How will you display your data? What types of interactions will you support? Provide some sketches that you have for the system design.
