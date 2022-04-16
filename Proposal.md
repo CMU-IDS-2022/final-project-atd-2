@@ -144,3 +144,22 @@ GRAPH 3 - GEOMAP REPRESENTATION OF COUNTRIES ACTIVELY PARTICIPATING IN TAKING AC
 
 Upon selecting a particular country on the geomap it will display the climate hazard frequently experienced, action taken to prevent drastic effects of the climate hazard from occurring and population actively involved in preventing the climate hazard through its efforts. 
 
+# Dataset Group 3
+
+Data Processing
+Do you have to do substantial data cleanup?
+The data set includes missing and null values. Thus, it will require a certain amount of cleaning to ensure that we remove the null values or fill them in appropriately to ensure meaningful data for further analysis and prediction.
+
+What quantities do you plan to derive from your data?
+- Historical electricity demand versus electricity generation trend
+- Forecasted electricity demand and electricity generation
+- 
+How will data processing be implemented?
+- Remove null values or missing values
+- Data extrapolation or data filling, such as filling missing values by taking the average of the values in that column
+- Dealing with outliers to ensure our final results are not skewed
+- Possible normalization of different quantities to bring them within the same range
+Show some screenshots of your data to demonstrate you have explored it.
+
+![](D3_EDA1.png)
+
