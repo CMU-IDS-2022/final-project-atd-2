@@ -146,14 +146,14 @@ Upon selecting a particular country on the geomap it will display the climate ha
 
 # Dataset Group 3
 
-Data Processing
+## Data Processing
 Do you have to do substantial data cleanup?
-The data set includes missing and null values. Thus, it will require a certain amount of cleaning to ensure that we remove the null values or fill them in appropriately to ensure meaningful data for further analysis and prediction.
+- The data set includes missing and null values. Thus, it will require a certain amount of cleaning to ensure that we remove the null values or fill them in appropriately to ensure meaningful data for further analysis and prediction.
 
 What quantities do you plan to derive from your data?
 - Historical electricity demand versus electricity generation trend
 - Forecasted electricity demand and electricity generation
-- 
+
 How will data processing be implemented?
 - Remove null values or missing values
 - Data extrapolation or data filling, such as filling missing values by taking the average of the values in that column
@@ -161,5 +161,26 @@ How will data processing be implemented?
 - Possible normalization of different quantities to bring them within the same range
 Show some screenshots of your data to demonstrate you have explored it.
 
-![](D3_EDA1.png)
+![](img/D3_EDA1.png)
+![](img/D3_EDA2.png)
+![](img/D3_EDA3.png)
+
+## System Design
+How will you display your data? 
+-https://github.com/owid/energy-data: owid-energy-data.csv
+
+Provide some sketches that you have for the system design.
+GRAPH: HISTORICAL ELECTRICITY DEMAND VS GENERATION:
+- The below graph is meant to gain insights into the trend of electricity demand and generation with a filter to select which country you want to see the output for
+
+![](img/D3_S1.jpeg)
+
+
+GRAPH: FORECASTED ELECTRICITY DEMAND VS GENERATION
+This below graph is meant to show the forecasted demand for the coming years and compare it with the electricity generation. This would help us see places where there is a mismatch between demand and supply and suggest possible solutions. 
+
+![](img/D3_S2.jpeg)
+
+Both graphs will allow for filtering according to country to see where each country stands in terms of our metrics.
+
 
