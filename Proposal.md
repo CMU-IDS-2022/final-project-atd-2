@@ -101,3 +101,46 @@ This visualization will show the same world map, but with circles overlaid over 
 ![](img/IDSEnergyShareByFuel.jpg)
 
 This visualization will have three interlinked bar charts. The first chart (clockwise from the top left) will show the current split of world energy production by fuel source type, the second chart shows the net combined energy produced using these fuels along with a marker indicating the current energy requirement, and finally the third chart shows the net CO2 emissions given this energy source combination. The idea is to allow the user to control the proportion of each fuel type in the energy mix. Changing a proportion would change the net energy production as well as the net CO2 emissions.
+
+# Dataset Group 2
+Data Processing 
+Do you have to do substantial data cleanup? 
+No, we just dropped any null values that were present in the final_dataset1 and final_dataset2 files 
+
+What quantities do you plan to derive from your data?
+1)Impact of mitigation strategies preventing climate change
+2) Action taken by cities to battle climate hazards
+3)Population of each country actively working towards reducing emissions,saving energy and increasing the use of renewable energy.
+
+How will data processing be implemented?  Show some screenshots of your data to demonstrate you have explored it.
+![](img/Screen Shot 2022-04-15 at 9.02.19 PM.png)
+
+System Design
+How will you display your data?
+
+What types of interactions will you support? Provide some sketches that you have for the system design.
+
+Datasets:
+https://data.cdp.net/Mitigation-Actions/2021-Cities-Emissions-Reduction-Actions/rebb-tb9h :final_dataset1.csv
+https://data.cdp.net/Adaptation-Actions/2020-Cities-Adaptation-Actions/feaz-9v5k/data :final_dataset2.csv
+
+
+GRAPH 1 - DRILL DOWN BAR CHART(COUNTRY SPECIFIC CLIMATE HAZARDS AND ACTIONS TO BE IMPLEMENTED)
+
+Upon choosing the country the bar chart including different climate hazard will display. And upon choosing a particular climate hazard the possible action plans to be implemented will be displayed from most effective to least. 
+
+![](img/Screen Shot 2022-04-15 at 8.14.47 PM.png)
+![](img/Screen Shot 2022-04-15 at 8.15.22 PM.png)
+
+GRAPH 2 - IMPACT OF MITIGATION STRATEGIES PREVENTING CLIMATE CHANGE
+
+![](img/Screen Shot 2022-04-15 at 8.15.35 PM.png)
+
+Comparing the emission reduction rate, energy savings and renewable energy saved of all countries when mitigation strategies are coming to effect. 
+
+
+GRAPH 3 - GEOMAP REPRESENTATION OF COUNTRIES ACTIVELY PARTICIPATING IN TAKING ACTION AGAINST CLIMATE CHANGE
+![](img/Screen Shot 2022-04-15 at 8.15.43 PM.png)
+
+Upon selecting a particular country on the geomap it will display the climate hazard frequently experienced, action taken to prevent drastic effects of the climate hazard from occurring and population actively involved in preventing the climate hazard through its efforts. 
+
