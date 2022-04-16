@@ -42,7 +42,11 @@ Overall, we aim to uncover patterns of climate change and their impact. As well 
 # Sketches and Data Analysis
 
 ## Data Processing. 
-Do you have to do substantial data cleanup? What quantities do you plan to derive from your data? How will data processing be implemented?  Show some screenshots of your data to demonstrate you have explored it.
+- Do you have to do substantial data cleanup? 
+- What quantities do you plan to derive from your data? 
+- How will data processing be implemented?  
+- Show some screenshots of your data to demonstrate you have explored it.
 
 ## System Design. 
-How will you display your data? What types of interactions will you support? Provide some sketches that you have for the system design.
+- How will you display your data? What types of interactions will you support? 
+- Provide some sketches that you have for the system design.
