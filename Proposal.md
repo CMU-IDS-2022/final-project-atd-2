@@ -104,8 +104,10 @@ This visualization will have three interlinked bar charts. The first chart (cloc
 
 # Dataset Group 2
 Data Processing 
--Do you have to do substantial data cleanup? 
--No, we just dropped any null values that were present in the final_dataset1 and final_dataset2 files 
+
+Do you have to do substantial data cleanup? 
+
+No, we just dropped any null values that were present in the final_dataset1 and final_dataset2 files 
 
 What quantities do you plan to derive from your data?
 1)Impact of mitigation strategies preventing climate change
