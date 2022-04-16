@@ -41,7 +41,7 @@ Overall, we aim to uncover patterns of climate change and their impact. As well 
 
 # Sketches and Data Analysis
 
-We have split this section by dataset types, with each dataset having the same subsections under it.
+We have split this section by dataset types, with each dataset having the same subsections under it. Please note that all the these dataset groups and their corresponding visualizations will be combined as single application for the final submission.
 
 # Dataset Group 1
 - primary-energy-source-bar.csv (Source Primary energy consumption by source, 2020 (ourworldindata.org) ): This dataset has data about energy consumption by fuel type per country for a big range of years.
@@ -50,16 +50,16 @@ We have split this section by dataset types, with each dataset having the same s
 
 
 ## Data Processing. 
-- Do you have to do substantial data cleanup? 
+- **Do you have to do substantial data cleanup?**
 For the above three datasets, we didn’t need to do any cleanup, the data does have some missing values for periods where no data is available for some countries. However, for our map based visualizations, this can be easily conveyed to the user by graying out the corresponding countries.
-- What quantities do you plan to derive from your data? 
+- **What quantities do you plan to derive from your data?**
     - Fuel consumption by country
     - Population by country
     - Per capita energy consumption by country
     - CO2 emissions by fuel type
 
-- How will data processing be implemented?  
-- Show some screenshots of your data to demonstrate you have explored it.
+- **How will data processing be implemented?**
+- **Show some screenshots of your data to demonstrate you have explored it.**
 
 We removed rows that were tagged to countries with country code as null. We also removed rows with country set to ‘World’:
 
@@ -82,8 +82,8 @@ The CO2 emission per fuel type consumed was calculated manually using the CO2 em
 
 
 ## System Design. 
-- How will you display your data? What types of interactions will you support? 
-- Provide some sketches that you have for the system design.
+- **How will you display your data? What types of interactions will you support?**
+- **Provide some sketches that you have for the system design.**
 
 **Energy consumption by country split by fuel type (renewable/non-renewable) on the world map:**
 ![](img/IDSEnergySplitByCountry.jpg)
@@ -103,43 +103,43 @@ This visualization will show the same world map, but with circles overlaid over 
 This visualization will have three interlinked bar charts. The first chart (clockwise from the top left) will show the current split of world energy production by fuel source type, the second chart shows the net combined energy produced using these fuels along with a marker indicating the current energy requirement, and finally the third chart shows the net CO2 emissions given this energy source combination. The idea is to allow the user to control the proportion of each fuel type in the energy mix. Changing a proportion would change the net energy production as well as the net CO2 emissions.
 
 # Dataset Group 2
-Data Processing 
+##Data Processing 
 
-Do you have to do substantial data cleanup? 
+**Do you have to do substantial data cleanup?**
 
 No, we just dropped any null values that were present in the final_dataset1 and final_dataset2 files 
 
-What quantities do you plan to derive from your data?
+**What quantities do you plan to derive from your data?**
 1)Impact of mitigation strategies preventing climate change
 2) Action taken by cities to battle climate hazards
 3)Population of each country actively working towards reducing emissions,saving energy and increasing the use of renewable energy.
 
-How will data processing be implemented?  Show some screenshots of your data to demonstrate you have explored it.
+**How will data processing be implemented?  Show some screenshots of your data to demonstrate you have explored it**
 ![](img/Screen%20Shot%202022-04-15%20at%209.02.19%20PM.png)
-System Design
-How will you display your data?
 
-What types of interactions will you support? Provide some sketches that you have for the system design.
+## System Design. 
+- **How will you display your data? What types of interactions will you support?**
+- **Provide some sketches that you have for the system design.**
 
 Datasets:
 https://data.cdp.net/Mitigation-Actions/2021-Cities-Emissions-Reduction-Actions/rebb-tb9h :final_dataset1.csv
 https://data.cdp.net/Adaptation-Actions/2020-Cities-Adaptation-Actions/feaz-9v5k/data :final_dataset2.csv
 
 
-GRAPH 1 - DRILL DOWN BAR CHART(COUNTRY SPECIFIC CLIMATE HAZARDS AND ACTIONS TO BE IMPLEMENTED)
+**GRAPH 1 - DRILL DOWN BAR CHART(COUNTRY SPECIFIC CLIMATE HAZARDS AND ACTIONS TO BE IMPLEMENTED)**
 
 Upon choosing the country the bar chart including different climate hazard will display. And upon choosing a particular climate hazard the possible action plans to be implemented will be displayed from most effective to least. 
 ![](img/Screen%20Shot%202022-04-15%20at%208.14.47%20PM.png)
 ![](img/Screen%20Shot%202022-04-15%20at%208.15.22%20PM.png)
 
-GRAPH 2 - IMPACT OF MITIGATION STRATEGIES PREVENTING CLIMATE CHANGE
+**GRAPH 2 - IMPACT OF MITIGATION STRATEGIES PREVENTING CLIMATE CHANGE**
 
 ![](img/Screen%20Shot%202022-04-15%20at%208.15.35%20PM.png)
 
 Comparing the emission reduction rate, energy savings and renewable energy saved of all countries when mitigation strategies are coming to effect. 
 
 
-GRAPH 3 - GEOMAP REPRESENTATION OF COUNTRIES ACTIVELY PARTICIPATING IN TAKING ACTION AGAINST CLIMATE CHANGE
+**GRAPH 3 - GEOMAP REPRESENTATION OF COUNTRIES ACTIVELY PARTICIPATING IN TAKING ACTION AGAINST CLIMATE CHANGE**
 ![](img/Screen%20Shot%202022-04-15%20at%208.15.43%20PM.png)
 
 Upon selecting a particular country on the geomap it will display the climate hazard frequently experienced, action taken to prevent drastic effects of the climate hazard from occurring and population actively involved in preventing the climate hazard through its efforts. 
@@ -147,19 +147,19 @@ Upon selecting a particular country on the geomap it will display the climate ha
 # Dataset Group 3
 
 ## Data Processing
-Do you have to do substantial data cleanup?
+**Do you have to do substantial data cleanup?**
 - The data set includes missing and null values. Thus, it will require a certain amount of cleaning to ensure that we remove the null values or fill them in appropriately to ensure meaningful data for further analysis and prediction.
 
-What quantities do you plan to derive from your data?
+**What quantities do you plan to derive from your data?**
 - Historical electricity demand versus electricity generation trend
 - Forecasted electricity demand and electricity generation
 
-How will data processing be implemented?
+**How will data processing be implemented?**
 - Remove null values or missing values
 - Data extrapolation or data filling, such as filling missing values by taking the average of the values in that column
 - Dealing with outliers to ensure our final results are not skewed
 - Possible normalization of different quantities to bring them within the same range
-Show some screenshots of your data to demonstrate you have explored it.
+**Show some screenshots of your data to demonstrate you have explored it.**
 
 ![](img/D3_EDA1.png)
 ![](img/D3_EDA2.png)
@@ -171,13 +171,13 @@ How will you display your data?
 
 Provide some sketches that you have for the system design:
 
-### GRAPH: HISTORICAL ELECTRICITY DEMAND VS GENERATION:
+**GRAPH: HISTORICAL ELECTRICITY DEMAND VS GENERATION:**
 - The below graph is meant to gain insights into the trend of electricity demand and generation with a filter to select which country you want to see the output for
 
 ![](img/D3_S1.jpeg)
 
 
-### GRAPH: FORECASTED ELECTRICITY DEMAND VS GENERATION
+**GRAPH: FORECASTED ELECTRICITY DEMAND VS GENERATION**
 - This below graph is meant to show the forecasted demand for the coming years and compare it with the electricity generation. This would help us see places where there is a mismatch between demand and supply and suggest possible solutions. 
 
 ![](img/DS_S2.jpeg)
