@@ -167,17 +167,18 @@ Show some screenshots of your data to demonstrate you have explored it.
 
 ## System Design
 How will you display your data? 
--https://github.com/owid/energy-data: owid-energy-data.csv
+- https://github.com/owid/energy-data: owid-energy-data.csv
 
-Provide some sketches that you have for the system design.
-GRAPH: HISTORICAL ELECTRICITY DEMAND VS GENERATION:
+Provide some sketches that you have for the system design:
+
+# GRAPH: HISTORICAL ELECTRICITY DEMAND VS GENERATION:
 - The below graph is meant to gain insights into the trend of electricity demand and generation with a filter to select which country you want to see the output for
 
 ![](img/D3_S1.jpeg)
 
 
 GRAPH: FORECASTED ELECTRICITY DEMAND VS GENERATION
-This below graph is meant to show the forecasted demand for the coming years and compare it with the electricity generation. This would help us see places where there is a mismatch between demand and supply and suggest possible solutions. 
+- This below graph is meant to show the forecasted demand for the coming years and compare it with the electricity generation. This would help us see places where there is a mismatch between demand and supply and suggest possible solutions. 
 
 ![](img/D3_S2.jpeg)
 
