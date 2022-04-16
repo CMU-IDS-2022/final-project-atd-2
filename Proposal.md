@@ -103,7 +103,7 @@ This visualization will show the same world map, but with circles overlaid over 
 This visualization will have three interlinked bar charts. The first chart (clockwise from the top left) will show the current split of world energy production by fuel source type, the second chart shows the net combined energy produced using these fuels along with a marker indicating the current energy requirement, and finally the third chart shows the net CO2 emissions given this energy source combination. The idea is to allow the user to control the proportion of each fuel type in the energy mix. Changing a proportion would change the net energy production as well as the net CO2 emissions.
 
 # Dataset Group 2
-##Data Processing 
+## Data Processing 
 
 **Do you have to do substantial data cleanup?**
 
@@ -167,7 +167,7 @@ Upon selecting a particular country on the geomap it will display the climate ha
 
 ## System Design
 How will you display your data? 
-- https://github.com/owid/energy-data: owid-energy-data.csv
+- https://github.com/owid/energy-data: owid-energy-data.csv. This includes data on energy consumption (primary energy, per capita, and growth rates), energy mix, electricity mix and other relevant metrics.
 
 Provide some sketches that you have for the system design:
 
