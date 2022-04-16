@@ -41,12 +41,63 @@ Overall, we aim to uncover patterns of climate change and their impact. As well 
 
 # Sketches and Data Analysis
 
+We have split this section by dataset types, with each dataset having the same subsections under it.
+
+# Dataset Group 1
+- primary-energy-source-bar.csv (Source Primary energy consumption by source, 2020 (ourworldindata.org) ): This dataset has data about energy consumption by fuel type per country for a big range of years.
+- population-past-future.csv (Source: https://ourworldindata.org/india-will-soon-overtake-china-to-become-the-most-populous-country-in-the-world): This dataset has historical population by country.
+- co2-emissions-by-fuel-line.csv Source(https://ourworldindata.org):This dataset has CO2 emissions by fuel type per country.
+
+
 ## Data Processing. 
 - Do you have to do substantial data cleanup? 
+For the above three datasets, we didn’t need to do any cleanup, the data does have some missing values for periods where no data is available for some countries. However, for our map based visualizations, this can be easily conveyed to the user by graying out the corresponding countries.
 - What quantities do you plan to derive from your data? 
+    - Fuel consumption by country
+    - Population by country
+    - Per capita energy consumption by country
+    - CO2 emissions by fuel type
+
 - How will data processing be implemented?  
 - Show some screenshots of your data to demonstrate you have explored it.
+
+We removed rows that were tagged to countries with country code as null. We also removed rows with country set to ‘World’:
+
+![](img/D1_SC1.png)
+
+Total energy consumption by country was derived:
+
+![](img/D1_SC2.png)
+
+The energy consumption dataset was joined with the population dataset to calculate the per capita energy consumption:
+![](img/D1_SC3.png)
+![](img/D1_SC4.png)
+![](img/D1_SC5.png)
+
+
+
+The CO2 emission per fuel type consumed was calculated manually using the CO2 emissions by fuel dataset:
+![](img/D1_SC6.png)
+
+
 
 ## System Design. 
 - How will you display your data? What types of interactions will you support? 
 - Provide some sketches that you have for the system design.
+
+**Energy consumption by country split by fuel type (renewable/non-renewable) on the world map:**
+![](img/IDSEnergySplitByCountry.jpg)
+
+The basic idea behind this visualization is to convey the overall fuel consumption by country split further by fuel type. We hope to overlay each country by a circle which will be further split by line thickness, with the thinner line indicating the share of renewable energy and the thicker line indicating the share of non-renewable energy. Just by looking at this visualization alone, the viewer will get the impression that the biggest CO2 producers are countries like China, India, and the USA. However, we will give the user a button to change the visualization into the following one:
+
+
+**Per capita energy consumption mapped to the world map:**
+![](img/IDSEnergyPerCapita.jpg)
+
+This visualization will show the same world map, but with circles overlaid over countries with size proportional to the per capita energy consumption of the country. According to our data analysis, countries like China and India will now be much lower in the ranking if we measure by per capita energy consumption, while countries like Qatar, Singapore, Iceland, UAE will be at the top (biggest overlaid circles). The aim of this visualization is to convey that richer countries consume energy at a much higher rate per person than poorer countries. If we are expecting these poorer countries to develop, their energy consumption will be much higher in the future than it is now. 
+**Interaction supported**: This world map will allow users to select a country to set the world per capita energy consumption rate. For example, clicking on USA would set every country’s rate to that of the USA. There will be a bar on the right indicating net CO2 emissions which will go or down depending on the net emissions calculated based on the selected rate. This will help the user realize that if every country consumed energy at the rate of richer countries, the CO2 emissions will be much higher. Thus, there is a need to build plans where the world can accommodate the growth of poorer countries.
+
+**Energy split by fuel source:**
+![](img/IDSEnergyShareByFuel.jpg)
+
+This visualization will have three interlinked bar charts. The first chart (clockwise from the top left) will show the current split of world energy production by fuel source type, the second chart shows the net combined energy produced using these fuels along with a marker indicating the current energy requirement, and finally the third chart shows the net CO2 emissions given this energy source combination. The idea is to allow the user to control the proportion of each fuel type in the energy mix. Changing a proportion would change the net energy production as well as the net CO2 emissions.
