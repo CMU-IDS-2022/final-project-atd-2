@@ -41,7 +41,7 @@ Overall, we aim to uncover patterns of climate change and their impact. As well 
 
 # Sketches and Data Analysis
 
-We have split this section by dataset types, with each dataset having the same subsections under it.
+We have split this section by dataset types, with each dataset having the same subsections under it. 
 
 # Dataset Group 1
 - primary-energy-source-bar.csv (Source Primary energy consumption by source, 2020 (ourworldindata.org) ): This dataset has data about energy consumption by fuel type per country for a big range of years.
@@ -103,7 +103,7 @@ This visualization will show the same world map, but with circles overlaid over 
 This visualization will have three interlinked bar charts. The first chart (clockwise from the top left) will show the current split of world energy production by fuel source type, the second chart shows the net combined energy produced using these fuels along with a marker indicating the current energy requirement, and finally the third chart shows the net CO2 emissions given this energy source combination. The idea is to allow the user to control the proportion of each fuel type in the energy mix. Changing a proportion would change the net energy production as well as the net CO2 emissions.
 
 # Dataset Group 2
-Data Processing 
+## Data Processing 
 
 Do you have to do substantial data cleanup? 
 
@@ -116,7 +116,8 @@ What quantities do you plan to derive from your data?
 
 How will data processing be implemented?  Show some screenshots of your data to demonstrate you have explored it.
 ![](img/Screen%20Shot%202022-04-15%20at%209.02.19%20PM.png)
-System Design
+
+## System Design
 How will you display your data?
 
 What types of interactions will you support? Provide some sketches that you have for the system design.
