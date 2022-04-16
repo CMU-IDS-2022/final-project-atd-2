@@ -128,6 +128,7 @@ https://data.cdp.net/Adaptation-Actions/2020-Cities-Adaptation-Actions/feaz-9v5k
 GRAPH 1 - DRILL DOWN BAR CHART(COUNTRY SPECIFIC CLIMATE HAZARDS AND ACTIONS TO BE IMPLEMENTED)
 
 Upon choosing the country the bar chart including different climate hazard will display. And upon choosing a particular climate hazard the possible action plans to be implemented will be displayed from most effective to least. 
+https://github.com/CMU-IDS-2022/final-project-atd-2/blob/main/img/Screen%20Shot%202022-04-15%20at%208.14.47%20PM.png
 
 (img/Screen Shot 2022-04-15 at 8.14.47 PM.png)
 (img/Screen Shot 2022-04-15 at 8.15.22 PM.png)
