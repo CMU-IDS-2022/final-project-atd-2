@@ -113,7 +113,7 @@ What quantities do you plan to derive from your data?
 3)Population of each country actively working towards reducing emissions,saving energy and increasing the use of renewable energy.
 
 How will data processing be implemented?  Show some screenshots of your data to demonstrate you have explored it.
-![](img/Screen Shot 2022-04-15 at 9.02.19 PM.png)
+(img/Screen Shot 2022-04-15 at 9.02.19 PM.png)
 
 System Design
 How will you display your data?
@@ -129,18 +129,18 @@ GRAPH 1 - DRILL DOWN BAR CHART(COUNTRY SPECIFIC CLIMATE HAZARDS AND ACTIONS TO B
 
 Upon choosing the country the bar chart including different climate hazard will display. And upon choosing a particular climate hazard the possible action plans to be implemented will be displayed from most effective to least. 
 
-![](img/Screen Shot 2022-04-15 at 8.14.47 PM.png)
-![](img/Screen Shot 2022-04-15 at 8.15.22 PM.png)
+(img/Screen Shot 2022-04-15 at 8.14.47 PM.png)
+(img/Screen Shot 2022-04-15 at 8.15.22 PM.png)
 
 GRAPH 2 - IMPACT OF MITIGATION STRATEGIES PREVENTING CLIMATE CHANGE
 
-![](img/Screen Shot 2022-04-15 at 8.15.35 PM.png)
+(img/Screen Shot 2022-04-15 at 8.15.35 PM.png)
 
 Comparing the emission reduction rate, energy savings and renewable energy saved of all countries when mitigation strategies are coming to effect. 
 
 
 GRAPH 3 - GEOMAP REPRESENTATION OF COUNTRIES ACTIVELY PARTICIPATING IN TAKING ACTION AGAINST CLIMATE CHANGE
-![](img/Screen Shot 2022-04-15 at 8.15.43 PM.png)
+(img/Screen Shot 2022-04-15 at 8.15.43 PM.png)
 
 Upon selecting a particular country on the geomap it will display the climate hazard frequently experienced, action taken to prevent drastic effects of the climate hazard from occurring and population actively involved in preventing the climate hazard through its efforts. 
 
