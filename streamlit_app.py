@@ -489,4 +489,4 @@ hists = bars_climateChange2.mark_bar(opacity=0.5, thickness=100).encode(
     selector
 )
 
-points_climateChange & bars_climateChange & hists
+st.write((points_climateChange & bars_climateChange & hists).resolve_scale(color='independent'))
