@@ -92,7 +92,7 @@ def get_fuelco2():
 
     world_population = 7713468203
     for col in co2_cols+['NetCO2']:
-        co2_pc[col + '_WORLD'] = co2_pc[col+'_PC']*world_population
+        co2_pc[col] = co2_pc[col+'_PC']*world_population
     return co2_pc, co2_cols
 
 # @st.cache
@@ -235,13 +235,13 @@ co2_pc.loc[(co2_pc.Entity == 'United States'), ['Entity']] = 'United States of A
 # co2_pc_world = co2_pc[co2_pc.Entity == 'World']
 # net_world_co2 = co2_pc[co2_pc.Entity == 'World'].NetCO2_WORLD.max()
 co2_pc = co2_pc[co2_pc.Entity != 'World']
-net_world_co2 = co2_pc['NetCO2_WORLD'].mean()
-net_co2_max = co2_pc['NetCO2_WORLD'].max() + 10000
-fuel_co2_long_2 = co2_pc.melt(id_vars='Entity', value_vars=list(map(lambda x: x + "_WORLD", co2_cols)))
+net_world_co2 = co2_pc['NetCO2'].mean()
+net_co2_max = co2_pc['NetCO2'].max() + 10000
+fuel_co2_long_2 = co2_pc.melt(id_vars='Entity', value_vars=list(map(lambda x: x, co2_cols)))
 
 co2_chart = alt.Chart(
     fuel_co2_long_2,
-    title='CO2 Emissions by Fuel Type Based on Selected Country\'s Rate'
+    title='Global CO2 Emissions by Fuel Type Based on Selected Country\'s Rate'
 ).mark_bar().encode(
     x=alt.X('variable', title='Emissions Source'), 
     y=alt.Y('mean(value):Q', title='CO2 emissions (T)'),
@@ -265,10 +265,10 @@ netCO2_rule_chart = alt.Chart(netCO2_Line).mark_rule().encode(
     height=200
 )
 
-fuel_co2_long_full = co2_pc.melt(id_vars='Entity', value_vars=['NetCO2_WORLD'])
+fuel_co2_long_full = co2_pc.melt(id_vars='Entity', value_vars=['NetCO2'])
 co2_chart_full = alt.Chart(
     fuel_co2_long_full,
-    title='Net Global CO2 Emissions Based on Selected Country\'s Rate'
+    title='Global CO2 Emissions Based on Selected Country\'s Rate'
 ).mark_bar().encode(
     x=alt.X('variable', title='World'), 
     y=alt.Y('mean(value):Q', title='CO2 emissions(T)', scale=alt.Scale(domain=[0, net_co2_max])),
@@ -283,6 +283,7 @@ co2_chart_full = alt.Chart(
 
 
 df_energy_mix = get_energy(with_coords=False)
+df_energy_mix.loc[(df_energy_mix.Entity == 'United States'), ['Entity']] = 'United States of America'
 cols = [col for col in df_energy_mix.columns if col not in ('Entity', 'Code', 'Year', 'TotalEnergy')]
 
 df_melt = df_energy_mix.melt(id_vars='Entity', value_vars=cols)
