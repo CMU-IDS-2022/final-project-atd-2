@@ -10,7 +10,7 @@ from sklearn.linear_model import LinearRegression
 
 alt.data_transformers.disable_max_rows()
 
-@st.cache
+# @st.cache
 def get_energy(with_coords=True):
 
     energy_sources = pd.read_csv('./data/primary-energy-source-bar.csv')
@@ -38,7 +38,7 @@ def get_energy(with_coords=True):
     country_lat = energy_sources.merge(lats, left_on='Entity', right_on='Country')
     return country_lat
 
-@st.cache
+# @st.cache
 def get_energypc(with_coords=True):
     population = pd.read_csv('./data/population-past-future.csv')
     population = population[~population.Code.isnull()]
@@ -63,7 +63,7 @@ def get_energypc(with_coords=True):
         joined['Longitude_x'] = joined['Longitude']
     return joined
 
-@st.cache
+# @st.cache
 def get_fuelco2():
     fuel_co2 = pd.read_csv('./data/co2-emissions-by-fuel-line.csv')
     fuel_co2 = fuel_co2[(fuel_co2.Year == 2019)]
@@ -228,7 +228,9 @@ per_capita = st.checkbox("Show Per Capita Energy")
 co2_pc, co2_cols = get_fuelco2()
 co2_pc.loc[(co2_pc.Entity == 'United States'), ['Entity']] = 'United States of America'
 # co2_pc_world = co2_pc[co2_pc.Entity == 'World']
+# net_world_co2 = co2_pc[co2_pc.Entity == 'World'].NetCO2_WORLD.max()
 co2_pc = co2_pc[co2_pc.Entity != 'World']
+net_world_co2 = co2_pc['NetCO2_WORLD'].mean()
 fuel_co2_long_2 = co2_pc.melt(id_vars='Entity', value_vars=list(map(lambda x: x + "_WORLD", co2_cols)))
 
 co2_chart = alt.Chart(
@@ -236,8 +238,8 @@ co2_chart = alt.Chart(
     title='CO2 Emissions by Fuel Type Based on Selected Country\'s Rate'
 ).mark_bar().encode(
     x=alt.X('variable', title='Emissions Source'), 
-    y=alt.Y('value:Q', title='CO2 emissions (T)'),
-    tooltip = [alt.Tooltip('value:Q', title='CO2 emissions (T)')]
+    y=alt.Y('mean(value):Q', title='CO2 emissions (T)'),
+    tooltip = [alt.Tooltip('mean(value):Q', title='CO2 emissions (T)')]
 ).properties(
         width=200,
         height=200
@@ -245,20 +247,32 @@ co2_chart = alt.Chart(
             selector
 ).add_selection(selector)
 
+netCO2_Line = pd.DataFrame({
+        'CO2 emissions(T)': [net_world_co2],
+        'Red mark': "Original Net CO2 Emissions"
+    })
+netCO2_rule_chart = alt.Chart(netCO2_Line).mark_rule().encode(
+    y=alt.Y('CO2 emissions(T):Q', title='CO2 emissions(T)'),
+    color = alt.Color('Red mark', scale = alt.Scale(range=['red']))
+).properties(
+    width=200,
+    height=200
+)
+
 fuel_co2_long_full = co2_pc.melt(id_vars='Entity', value_vars=['NetCO2_WORLD'])
 co2_chart_full = alt.Chart(
     fuel_co2_long_full,
     title='Net Global CO2 Emissions Based on Selected Country\'s Rate'
 ).mark_bar().encode(
     x=alt.X('variable', title='World'), 
-    y=alt.Y('value:Q', title='CO2 emissions(T)'),
-    tooltip = [alt.Tooltip('value:Q', title='CO2 emissions (T)')]
+    y=alt.Y('mean(value):Q', title='CO2 emissions(T)'),
+    tooltip = [alt.Tooltip('mean(value):Q', title='CO2 emissions (T)')]
 ).properties(
         width=200,
         height=200
 ).transform_filter(
             selector
-).add_selection(selector)
+).add_selection(selector) + netCO2_rule_chart
 
 
 if per_capita:
