@@ -9,6 +9,7 @@ import streamlit as st
 from sklearn.linear_model import LinearRegression
 
 alt.data_transformers.disable_max_rows()
+st.set_page_config(page_title="Energy, Climate Change, and Global Responsibility", layout="wide")
 
 # @st.cache
 def get_energy(with_coords=True):
@@ -225,6 +226,8 @@ def get_chart_table(data):
     text = alt.hconcat(country, energy)
     return text
 """
+# Climate Change, Energy, and Global Responsibility
+
 
 ## Energy Consumption and CO2 Emissions
 
