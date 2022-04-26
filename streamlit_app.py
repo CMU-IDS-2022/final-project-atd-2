@@ -7,6 +7,8 @@ import numpy as np
 from vega_datasets import data
 import streamlit as st
 from sklearn.linear_model import LinearRegression
+from PIL import Image
+
 
 alt.data_transformers.disable_max_rows()
 st.set_page_config(page_title="Energy, Climate Change, and Global Responsibility", layout="wide")
@@ -326,8 +328,10 @@ else:
     st.write((geo_map1 | get_chart_table(table_df)).resolve_scale(
         color="independent").configure_view(strokeWidth=0))
 
+image_expander = st.expander('Circle overlayed map')
+image = Image.open('./img/world_map_circles.png')
 
-
+image_expander.image(image, caption='Using circles instead of a heatmap')
 
 """
 
