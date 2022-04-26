@@ -210,6 +210,20 @@ def get_energypc_chart_heatmap():
     # return (base_chart|pc_chart).resolve_scale(color='independent'), selector
     return base_chart, pc_chart, selector
 
+# Credit: https://stackoverflow.com/questions/67997825/python-altair-generate-a-table-on-selection
+def get_chart_table(data):
+    ranked_text = alt.Chart(data).mark_text(align='right').encode(
+    y=alt.Y('row_number:O',axis=None)
+    ).transform_window(
+        row_number='row_number()'
+    ).transform_filter(
+        'datum.row_number < 10'
+    )
+
+    country = ranked_text.encode(text='Entity:N', strokeWidth=alt.value(0)).properties(title=alt.TitleParams(text='Country', align='right'))
+    energy = ranked_text.encode(text='TotalEnergy:N', strokeWidth=alt.value(0)).properties(title=alt.TitleParams(text='Total Energy Consumption', align='right'))
+    text = alt.hconcat(country, energy)
+    return text
 """
 
 ## Energy Consumption and CO2 Emissions
@@ -223,7 +237,7 @@ However, net energy consumption does not tell the full story. Some countries hav
 
 The worst offenders are very different if we look at it from the per capita energy perspective. Countries like UAE, USA, Saudi Arabia, and Iceland have a very high per capita energy consumption. However, it must be noted that these countries have a much higher standard of living when compared to countries like Algeria and India. 
 
-If we are expecting these countries to grow, the per capita energy needs of these countries will also grow and so will the net CO2 emissions. Let's try visualize the hypothetical scenario of every country in the world having the same standard of living as the developed countries. Try clicking on one of the countries on the world map. It's per capita energy consumption and current fuel mix will be applied to all the countries and the resulting effects can be seen on the charts below.
+If we are expecting these countries to grow, the per capita energy needs of these countries will also grow and so will the net CO2 emissions. Let's try visualize the hypothetical scenario of every country in the world has the same standard of living as the developed countries. Try clicking on one of the countries on the world map. It's per capita energy consumption and current fuel mix will be applied to all the countries and the resulting effects can be seen on the charts below.
 """
 geo_map1, geo_map2, selector = get_energypc_chart_heatmap()
 
@@ -255,11 +269,12 @@ co2_chart = alt.Chart(
 
 netCO2_Line = pd.DataFrame({
         'CO2 emissions(T)': [net_world_co2],
-        'Red mark': "Original Net CO2 Emissions"
+        'Red Bar indicates:': "Original Net CO2 Emissions"
     })
 netCO2_rule_chart = alt.Chart(netCO2_Line).mark_rule().encode(
     y=alt.Y('CO2 emissions(T):Q', title='CO2 emissions(T)'),
-    color = alt.Color('Red mark', scale = alt.Scale(range=['red']))
+    color = alt.Color('Red Bar indicates:', scale = alt.Scale(range=['red'])),
+    tooltip = [alt.Tooltip('CO2 emissions(T):Q', title='Global CO2 emissions(T) (Original)')]
 ).properties(
     width=200,
     height=200
@@ -289,7 +304,7 @@ cols = [col for col in df_energy_mix.columns if col not in ('Entity', 'Code', 'Y
 df_melt = df_energy_mix.melt(id_vars='Entity', value_vars=cols)
 energy_mix_chart = alt.Chart(
     df_melt, 
-    title="Energy Mix for the Selected Country"
+    title="Energy Sources for the Selected Country"
          ).mark_arc().encode(
     theta=alt.Theta(field="value"),
     color=alt.Color(field="variable", title="Fuel Type"),
@@ -298,9 +313,15 @@ energy_mix_chart = alt.Chart(
 
 
 if per_capita:
+    """### What if every country had the same consumption rate?
+           Click on a country to apply its consumption rate to the world.
+    """
     st.write(((geo_map1 | geo_map2).resolve_scale(color='independent') & (energy_mix_chart | co2_chart | co2_chart_full).resolve_scale(color='independent')).resolve_scale(color='independent'))
 else:
-    st.write(geo_map1)
+    table_df = df_energy_mix[['Entity', 'TotalEnergy']].sort_values(['TotalEnergy'], ascending=False)
+    table_df = table_df[~table_df.Entity.isin(('World', 'Asia Pacific', 'OECD', 'Non-OECD', 'European Union', 'Middle East', 'Africa', 'South & Central America', 'North America', 'Europe', 'CIS'))]
+    st.write((geo_map1 | get_chart_table(table_df)).resolve_scale(
+        color="independent").configure_view(strokeWidth=0))
 
 
 
@@ -403,7 +424,7 @@ except Exception as e:
 
 
 
-data = pd.read_csv("./data/Dataset1.csv")
+data = pd.read_csv("./data/Dataset1_cleaned.csv")
 
 
 data2 = pd.read_csv("./data/emmission.csv")
