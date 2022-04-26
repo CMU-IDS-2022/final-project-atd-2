@@ -343,7 +343,7 @@ all_countries = list(set(energy_data["country"]))
 
 all_countries.sort()
 option = st.selectbox(
-     'Select a Country:',
+     'Select a Region:',
      all_countries)
 
 energy_ukr = energy_data[energy_data['country']==option]
