@@ -224,7 +224,7 @@ def get_chart_table(data):
     )
 
     country = ranked_text.encode(text='Entity:N', strokeWidth=alt.value(0)).properties(title=alt.TitleParams(text='Country', align='right'))
-    energy = ranked_text.encode(text='TotalEnergy:N', strokeWidth=alt.value(0)).properties(title=alt.TitleParams(text='Total Energy Consumption', align='right'))
+    energy = ranked_text.encode(text='TotalEnergy:N', strokeWidth=alt.value(0)).properties(title=alt.TitleParams(text='Total Energy Consumption (TWh)', align='right'))
     text = alt.hconcat(country, energy)
     return text
 """
