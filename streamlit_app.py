@@ -586,8 +586,8 @@ ranked_text = alt.Chart(data2).mark_text().encode(
 )
 
 # Data Tables
-carbon_level = ranked_text.encode(text='Estimated emissions reduction (metric tonnes CO2e):N').properties(title='Carbon level reduction')
-implementation = ranked_text.encode(text ='Means of Implementation:N').properties(title ='Means of Implementation')
+carbon_level = ranked_text.encode(text='Estimated emissions reduction (metric tonnes CO2e):N').properties(title='Carbon level reduction in Metric Tonnes')
+implementation = ranked_text.encode(text ='Action Title:N').properties(title ='Action Title')
 
 text = alt.hconcat(implementation,carbon_level) # Combine data tables
 
