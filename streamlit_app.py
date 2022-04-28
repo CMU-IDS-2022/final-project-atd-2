@@ -27,7 +27,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-
+@st.cache
 def get_energy(with_coords=True):
 
     energy_sources = pd.read_csv('./data/primary-energy-source-bar.csv')
@@ -47,15 +47,21 @@ def get_energy(with_coords=True):
     for col in energy_sources.columns:
         if col != 'Entity' and col != 'Code' and col != 'Year' and col != 'TotalEnergy':
             energy_sources['TotalEnergy'] += energy_sources[col]
+    
+    energy_sources['Entity'] = energy_sources.Entity.astype('str')
+    
+    energy_sources.loc[(energy_sources.Entity == 'United States'), ['Entity']] = 'United States of America'
     if with_coords == False:
         return energy_sources
     lats = pd.read_csv('./data/average-latitude-longitude-countries.csv')
+    
+    lats.loc[(lats.Country == 'United States'), ['Country']] = 'United States of America'
 
     energy_sources = energy_sources[energy_sources.Entity != 'Europe']
     country_lat = energy_sources.merge(lats, left_on='Entity', right_on='Country')
     return country_lat
 
-# @st.cache
+@st.cache
 def get_energypc(with_coords=True):
     population = pd.read_csv('./data/population-past-future.csv')
     population = population[~population.Code.isnull()]
@@ -70,9 +76,10 @@ def get_energypc(with_coords=True):
     population = population[population.Year == 2019]
     population['Entity'] = population.Entity.astype('str')
     population = population[population.Entity != 'Europe']
+    population.loc[(population.Entity == 'United States'), ['Entity']] = 'United States of America'
+    
 
     df = get_energy(with_coords)
-    df['Entity'] = df.Entity.astype('str')
     joined = population.merge(df, on='Entity')
     joined['EnergyPerCapita'] = joined['TotalEnergy']/joined['Population (historical estimates and future projections)']
     if with_coords:
@@ -80,12 +87,13 @@ def get_energypc(with_coords=True):
         joined['Longitude_x'] = joined['Longitude']
     return joined
 
-# @st.cache
+@st.cache
 def get_fuelco2():
     fuel_co2 = pd.read_csv('./data/co2-emissions-by-fuel-line.csv')
     fuel_co2 = fuel_co2[(fuel_co2.Year == 2019)]
     co2_cols = ['Annual CO2 emissions from oil', 'Annual CO2 emissions from flaring', 'Annual CO2 emissions from cement', 'Annual CO2 emissions from coal', 'Annual CO2 emissions from gas', 'Annual CO2 emissions from other industry']
     co2_rename = ['Oil', 'Flaring', 'Cement', 'Coal', 'Gas', 'Other Industries']
+    fuel_co2.loc[(fuel_co2.Entity == 'United States'), ['Entity']] = 'United States of America'
     fuel_co2 = fuel_co2.rename(index=str, columns=dict(zip(co2_cols, co2_rename)))
     fuel_co2['NetCO2'] = 0
     for col in co2_rename:
@@ -94,6 +102,8 @@ def get_fuelco2():
     
     co2_cols = co2_rename
     population = pd.read_csv('./data/population-past-future.csv')
+    
+    population.loc[(population.Entity == 'United States'), ['Entity']] = 'United States of America'
     population = population[~population.Code.isnull()]
     population = population[population.Code != 'NaN']
     population = population[population.Year == 2019]
@@ -181,7 +191,6 @@ def get_energypc_chart_heatmap():
     selector = alt.selection_single(name="selector", fields=['Entity'])
     countries = alt.topo_feature(url, 'countries')
     energy_sources = get_energy(with_coords=False)
-    energy_sources.loc[(energy_sources.Entity == 'United States'), ['Entity']] = 'United States of America'
     color_range = alt.Color('TotalEnergy:Q', 
                        scale=alt.Scale(
                         type='pow', exponent=0.6, 
@@ -204,7 +213,6 @@ def get_energypc_chart_heatmap():
     ).add_selection(selector)
 
     energy_pc = get_energypc(with_coords=False)
-    energy_pc.loc[(energy_pc.Entity == 'United States'), ['Entity']] = 'United States of America'
     pc_chart = alt.Chart(countries,
         title='Per Capita Energy Consumption by Country'
     ).mark_geoshape(stroke='white').encode(
@@ -262,7 +270,6 @@ def per_capita_energy():
 
 
     co2_pc, co2_cols = get_fuelco2()
-    co2_pc.loc[(co2_pc.Entity == 'United States'), ['Entity']] = 'United States of America'
     # co2_pc_world = co2_pc[co2_pc.Entity == 'World']
     # net_world_co2 = co2_pc[co2_pc.Entity == 'World'].NetCO2_WORLD.max()
     co2_pc = co2_pc[co2_pc.Entity != 'World']
@@ -315,7 +322,6 @@ def per_capita_energy():
 
 
     df_energy_mix = get_energy(with_coords=False)
-    df_energy_mix.loc[(df_energy_mix.Entity == 'United States'), ['Entity']] = 'United States of America'
     cols = [col for col in df_energy_mix.columns if col not in ('Entity', 'Code', 'Year', 'TotalEnergy')]
 
     df_melt = df_energy_mix.melt(id_vars='Entity', value_vars=cols)
@@ -601,12 +607,12 @@ def climate_change_impact():
         color="independent"
     ).configure_view(strokeWidth=0))
 
-pages = ["Energy Consumption WhatIf", "Forecasting Demand & Consumption", "Climate Change Impact"]
+pages = ["Energy Consumption What If", "Energy Forecast", "Climate Change Impact"]
 
 page = st.sidebar.selectbox(
         'Navigation',
         pages)
-
+st.markdown("# Climate Change, Energy, and Global Responsibility")
 # Create a multi-page app
 # Source: https://towardsdatascience.com/creating-multipage-applications-using-streamlit-efficiently-b58a58134030
 if page == pages[0]:
