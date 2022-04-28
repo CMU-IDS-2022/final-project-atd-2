@@ -421,6 +421,68 @@ try:
       ["electricity generation"], 
       as_=["Regression_generation", "y"]
   ).encode(alt.Color("Regression_generation:N"))
+  st.write("Electricity generation sources: Fossil-fuels vs Renewable Energy")
+  st.write("In the plot below, the points marked upto 2022 are actual historical values and the lines are the predictions for electricity generation using fossil fuels and using renewable energy.")
+
+  X = energy_ukr['year'].values[:,np.newaxis]
+  y_fossil = energy_ukr['fossil_share_elec']
+
+
+  model_fossil = LinearRegression()
+  model_fossil.fit(X, y_fossil)
+
+
+  object_for_visualization = {'Years':x_years, "Power(in Terawatt-hour)": list(y_fossil) + list(model_fossil.predict(np.asarray(x_years[-7:]).reshape(-1,1)))}
+  viz_df = pd.DataFrame(object_for_visualization)
+  viz_df['date'] = pd.to_datetime(viz_df['Years'])
+
+
+  chart3=alt.Chart(viz_df).mark_point(color = "blue",).encode(
+          alt.X("Years", scale=alt.Scale(zero=False)),
+          alt.Y("Power(in Terawatt-hour)",  scale=alt.Scale(zero=False)),
+          tooltip=["Years", "Power(in Terawatt-hour)"],
+          
+      ).properties(
+          width=800, height=400
+      )
+
+  final_chart_2 = chart3 + chart3.transform_regression("Years", "Power(in Terawatt-hour)").mark_line(color = "blue").encode(       
+      tooltip=["Years", "Power(in Terawatt-hour)"],
+      ).transform_fold(
+      ["Fossil fuel electricity share"], 
+      as_=["Fossil fuel electricity share", "y"]
+  ).encode(alt.Color("Fossil fuel electricity share:N"))
+
+
+  
+  X = energy_ukr['year'].values[:,np.newaxis]
+  y_renewables = energy_ukr['renewables_share_elec']
+
+
+  model_renewable = LinearRegression()
+  model_renewable.fit(X, y_renewables)
+
+
+  object_for_visualization = {'Years':x_years, "Power(in Terawatt-hour)": list(y_renewables) + list(model_renewable.predict(np.asarray(x_years[-7:]).reshape(-1,1)))}
+  viz_df = pd.DataFrame(object_for_visualization)
+  viz_df['date'] = pd.to_datetime(viz_df['Years'])
+  chart4 =alt.Chart(viz_df).mark_point(color = "red" ).encode(
+          alt.X("Years", scale=alt.Scale(zero=False)),
+          alt.Y("Power(in Terawatt-hour)",  scale=alt.Scale(zero=False)),
+          tooltip=["Years", "Power(in Terawatt-hour)"], 
+          
+      ).properties(
+          width=800, height=400
+      )
+  final_chart_2 + chart4 + chart4.transform_regression("Years", "Power(in Terawatt-hour)").mark_line().encode(       
+      tooltip=["Years", "Power(in Terawatt-hour)"],
+      x = alt.X('Years',axis = alt.Axis(format="d")),
+      y=alt.Y('Power(in Terawatt-hour)')).transform_fold(
+      ["Renewable electricity share"], 
+      as_=["Renewable electricity share", "y"]
+  ).encode(alt.Color("Renewable electricity share:N"))
+
+  st.write("Note: The above plot does not consider electricity generated using other sources like oil, gas and others.")
 
 except Exception as e:
   print(e)
@@ -497,3 +559,42 @@ hists = bars_climateChange2.mark_bar(opacity=0.5, thickness=100).encode(
 )
 
 st.write((points_climateChange & bars_climateChange & hists).resolve_scale(color='independent'))
+
+"""# Actions implemented by each country which led to a reduction in the CO2 levels"""
+country_list = list(data2['Country'].unique())
+input_dropdown = alt.binding_select(options=country_list)
+selection = alt.selection_single(fields=['Country'], bind=input_dropdown, name='Country')
+bars = alt.Chart(data2).mark_bar().encode(
+    y='Country:N',
+    color='Country:N',
+    x='Population:Q'
+).transform_filter(
+    selection
+).add_selection(selection)
+
+# Base chart for data tables
+ranked_text = alt.Chart(data2).mark_text().encode(
+    y=alt.Y('row_number:O',axis=None)
+).transform_window(
+    row_number='row_number()'
+).transform_filter(
+    selection
+).transform_window(
+    rank='rank(row_number)'
+).transform_filter(
+    alt.datum.rank<20
+)
+
+# Data Tables
+carbon_level = ranked_text.encode(text='Estimated emissions reduction (metric tonnes CO2e):N').properties(title='Carbon level reduction in Metric Tonnes')
+implementation = ranked_text.encode(text ='Action Title:N').properties(title ='Action Title')
+
+text = alt.hconcat(implementation,carbon_level) # Combine data tables
+
+# Build chart
+st.write(alt.hconcat(
+    bars,
+    text
+).resolve_legend(
+    color="independent"
+))
