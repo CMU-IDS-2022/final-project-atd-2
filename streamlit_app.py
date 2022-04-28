@@ -328,10 +328,6 @@ else:
     st.write((geo_map1 | get_chart_table(table_df)).resolve_scale(
         color="independent").configure_view(strokeWidth=0))
 
-image_expander = st.expander('Circle overlayed map')
-image = Image.open('./img/world_map_circles.png')
-
-image_expander.image(image, caption='Using circles instead of a heatmap')
 
 """
 
