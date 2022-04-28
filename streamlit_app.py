@@ -359,7 +359,7 @@ try:
 
 
 
-  # st.write("Electricity Demand Historic Data and Prediction")
+#   st.write("Electricity Demand Historic Data and Prediction")
   X = energy_ukr['year'].values[:,np.newaxis]
   y_demand= energy_ukr['electricity_demand']
 
@@ -387,7 +387,7 @@ try:
       as_=["Regression_demand", "y"]
   ).encode(alt.Color("Regression_demand:N"))
 
-  st.write("Electricity Demand and Generation Historic Data and Prediction")
+  st.write("**Electricity Demand and Generation Historic Data and Prediction**")
   st.write("In the plot below, the points marked upto 2022 are actual historical values and the lines are the predictions for electricity demand and generation.")
 
   X = energy_ukr['year'].values[:,np.newaxis]
@@ -417,7 +417,7 @@ try:
       ["electricity generation"], 
       as_=["Regression_generation", "y"]
   ).encode(alt.Color("Regression_generation:N"))
-  st.write("Electricity generation sources: Fossil-fuels vs Renewable Energy")
+  st.write("**Electricity generation sources: Fossil-fuels vs Renewable Energy**")
   st.write("In the plot below, the points marked upto 2022 are actual historical values and the lines are the predictions for electricity generation using fossil fuels and using renewable energy.")
 
   X = energy_ukr['year'].values[:,np.newaxis]
@@ -478,7 +478,7 @@ try:
       as_=["Renewable electricity share", "y"]
   ).encode(alt.Color("Renewable electricity share:N"))
 
-  st.write("Note: The above plot does not consider electricity generated using other sources like oil, gas and others.")
+#   st.write("Note: The above plot does not consider electricity generated using other sources like oil, gas and others.")
 
 except Exception as e:
   print(e)
