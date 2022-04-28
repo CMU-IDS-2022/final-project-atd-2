@@ -1,0 +1,6 @@
+pandas
+vega_datasets
+numpy
+scikit-learn
+Pillow
+streamlit
