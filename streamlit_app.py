@@ -592,9 +592,9 @@ implementation = ranked_text.encode(text ='Means of Implementation:N').propertie
 text = alt.hconcat(implementation,carbon_level) # Combine data tables
 
 # Build chart
-alt.hconcat(
+st.write(alt.hconcat(
     bars,
     text
 ).resolve_legend(
     color="independent"
-)
+))
