@@ -516,7 +516,7 @@ def climate_change_impact():
     data2 = get_emissions()
 
 
-    st.markdown("""# Climate Hazards of Each country and the Adaptation Action""")
+    st.markdown("""## Climate Hazards of Each country and the Adaptation Action""")
     brush = alt.selection(type='interval')
     selector = alt.selection_single(empty='all', fields=['Country'])
 
@@ -568,7 +568,7 @@ def climate_change_impact():
 
     st.write((points_climateChange & bars_climateChange & hists).resolve_scale(color='independent'))
 
-    st.markdown("""# Actions implemented by each country which led to a reduction in the CO2 levels""")
+    st.markdown("""## Actions implemented by each country which led to a reduction in the CO2 levels""")
     country_list = list(data2['Country'].unique())
     input_dropdown = alt.binding_select(options=country_list, name='Country')
     selection = alt.selection_single(fields=['Country'], bind=input_dropdown, name='Country', init={'Country': "United States of America"})
