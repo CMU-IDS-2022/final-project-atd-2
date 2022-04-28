@@ -496,7 +496,7 @@ except Exception as e:
 data = pd.read_csv("./data/Dataset1_cleaned.csv")
 
 
-data2 = pd.read_csv("./data/emmission.csv")
+data2 = pd.read_csv("./data/emissions_cleaned.csv")
 
 
 
@@ -562,8 +562,8 @@ st.write((points_climateChange & bars_climateChange & hists).resolve_scale(color
 
 """# Actions implemented by each country which led to a reduction in the CO2 levels"""
 country_list = list(data2['Country'].unique())
-input_dropdown = alt.binding_select(options=country_list)
-selection = alt.selection_single(fields=['Country'], bind=input_dropdown, name='Country')
+input_dropdown = alt.binding_select(options=country_list, name='Country')
+selection = alt.selection_single(fields=['Country'], bind=input_dropdown, name='Country', init={'Country': "United States of America"})
 bars = alt.Chart(data2).mark_bar().encode(
     y='Country:N',
     color='Country:N',
@@ -592,9 +592,9 @@ implementation = ranked_text.encode(text ='Action Title:N').properties(title ='A
 text = alt.hconcat(implementation,carbon_level) # Combine data tables
 
 # Build chart
-st.write(alt.hconcat(
-    bars,
-    text
+st.write(alt.vconcat(
+    text,
+    bars
 ).resolve_legend(
     color="independent"
-))
+).configure_view(strokeWidth=0))
