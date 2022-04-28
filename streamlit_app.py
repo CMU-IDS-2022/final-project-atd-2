@@ -11,7 +11,7 @@ from PIL import Image
 
 
 alt.data_transformers.disable_max_rows()
-st.set_page_config(page_title="Energy, Climate Change, and Global Responsibility", layout="wide")
+st.set_page_config(page_title="Energy, Climate Change, and Global Responsibility", layout="wide", page_icon="💡")
 
 # @st.cache
 def get_energy(with_coords=True):
@@ -311,9 +311,9 @@ energy_mix_chart = alt.Chart(
     df_melt, 
     title="Energy Sources for the Selected Country"
          ).mark_arc().encode(
-    theta=alt.Theta(field="value"),
+    theta=alt.Theta(field="value", type="quantitative"),
     color=alt.Color(field="variable", title="Fuel Type"),
-    tooltip = [alt.Tooltip('value', title='Energy TWh'), alt.Tooltip('Entity', title='Country'), alt.Tooltip('variable', title='Fuel Type')],
+    tooltip = [alt.Tooltip('value:Q', title='Energy TWh'), alt.Tooltip('Entity', title='Country'), alt.Tooltip('variable', title='Fuel Type')],
 ).transform_filter(selector).add_selection(selector)
 
 
@@ -446,7 +446,7 @@ data = data.dropna()
 
 
 
-"""# Climate Hazards of Each country and the Adaption Action"""
+"""# Climate Hazards of Each country and the Adaptation Action"""
 brush = alt.selection(type='interval')
 selector = alt.selection_single(empty='all', fields=['Country'])
 
@@ -464,7 +464,7 @@ points_climateChange = alt.Chart(
     brush
 )
 
-"""Select the Country to view the adaption action implemented"""
+"""Select the Country to view the adaptation action implemented"""
 
 bars_climateChange= alt.Chart(
     data,
