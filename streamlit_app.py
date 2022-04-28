@@ -559,3 +559,42 @@ hists = bars_climateChange2.mark_bar(opacity=0.5, thickness=100).encode(
 )
 
 st.write((points_climateChange & bars_climateChange & hists).resolve_scale(color='independent'))
+
+"""# Actions implemented by each country which led to a reduction in the CO2 levels"""
+country_list = list(data2['Country'].unique())
+input_dropdown = alt.binding_select(options=country_list)
+selection = alt.selection_single(fields=['Country'], bind=input_dropdown, name='Country')
+bars = alt.Chart(data2).mark_bar().encode(
+    y='Country:N',
+    color='Country:N',
+    x='Population:Q'
+).transform_filter(
+    selection
+).add_selection(selection)
+
+# Base chart for data tables
+ranked_text = alt.Chart(data2).mark_text().encode(
+    y=alt.Y('row_number:O',axis=None)
+).transform_window(
+    row_number='row_number()'
+).transform_filter(
+    selection
+).transform_window(
+    rank='rank(row_number)'
+).transform_filter(
+    alt.datum.rank<20
+)
+
+# Data Tables
+carbon_level = ranked_text.encode(text='Estimated emissions reduction (metric tonnes CO2e):N').properties(title='Carbon level reduction')
+implementation = ranked_text.encode(text ='Means of Implementation:N').properties(title ='Means of Implementation')
+
+text = alt.hconcat(implementation,carbon_level) # Combine data tables
+
+# Build chart
+alt.hconcat(
+    bars,
+    text
+).resolve_legend(
+    color="independent"
+)
