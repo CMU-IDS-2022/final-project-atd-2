@@ -440,7 +440,7 @@ reduced on the implementation of that particular action.
 ## Discussion
 **Energy Consumptions and Co2 emissions**
 
-![](img/Picture10.png)
+![](img/Picture11.png)
 
 The comparative visualization with the net energy consumption and per
 capita energy consumption side-by-side gives the user a complete picture
@@ -450,13 +450,13 @@ India have a very high net consumption, it is the smaller countries like
 Iceland and Saudi Arabia that lead the world in per capita energy
 consumption.
 
-![](img/Picture11.png)
+![](img/Picture12.png)
 
 Another interesting trend is that developing countries like Indonesia,
 India, and China all have significant energy being produced using coal
 and oil, which are highly emitting sources of energy.
 
-![](img/Picture12.png)
+![](img/Picture13.png)
 
 This can be contrasted with Ireland which has a high reliance on
 hydroelectric power for energy. 
@@ -464,7 +464,7 @@ hydroelectric power for energy. 
 The next visualization helps drive home the observation that coal and
 oil are in fact dirtiest fuel sources:
 
-![](img/Picture13.png)
+![](img/Picture14.png)
 
 Finally, the most important insight here is that if everyone consumed
 like the developed countries, we would be in a much worse state than
