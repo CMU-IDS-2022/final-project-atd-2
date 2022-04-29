@@ -266,14 +266,14 @@ The third visualization consists of a drop down which allows the user to select 
 
 The comparative visualization with the net energy consumption and per capita energy consumption side-by-side gives the user a complete picture of global hotspots of human activity and consumption. One insight that can be drawn from this chart is that while countries like China and India have a very high net consumption, it is the smaller countries like Iceland and Saudi Arabia that lead the world in per capita energy consumption.
 
+Another interesting trend is that developing countries like Indonesia, India, and China all have significant energy being produced using coal and oil, which are highly emitting sources of energy:
+
 ![](img/Picture12.png)
-
-Another interesting trend is that developing countries like Indonesia, India, and China all have significant energy being produced using coal and oil, which are highly emitting sources of energy.
-
-![](img/Picture13.png)
 
 This can be contrasted with Ireland which has a high reliance on
 hydroelectric power for energy. 
+
+![](img/Picture13.png)
 
 The next visualization helps drive home the observation that coal and oil are in fact dirtiest fuel sources:
 
@@ -322,6 +322,17 @@ actively help combat climate change.
 
 ## Future Work
 Stopping global warming is a combined global effort. Recently, during the United Nations climate convention there was a consensus for the political and business community to come together to stop climate change. Our visualizations have showcased the dire need for everyone to come together to stop the rapid change in climate. With the help of the insights from these visualizations we can help make a change in the real world and avoid the drastic climate change currently being experienced globally. 
+
+A brief list of ways in which our project can be extended is:
+
+1. While we visualized the impact of climate change on countries in terms of disasters, this will have an impact on countries with no disasters as well. This is because there will be migratory pressure from the affected countries. A visualization of this could help drive global efforts towards avoiding such a scenario all together.
+
+2. While we visualized the CO2 emissions by fuel, these visualizations are not enough for a user to easily understand how dirty a particular type of fuel is. A visualization which shows emissions per unit of fuel would help with this.
+
+3. None of our linear regression plots show error bounds. Error bounds are essential if we want to make honest visualizations about forecasts. Future work could communicate this better.
+
+Below is a more detailed discussion of potential use-cases of our project:
+
 
 The regression analysis that we carried out on our dataset was very helpful in generating a predictive model based on energy demand and generation. This predictive modeling proves to be very useful in understanding the future patterns a country is  looking at if no action is taken. This can be very useful to bring to notice to the governments of countries to immediately take action. Further analyses on these predictions could include specific regions within the country where electricity demand is exceptionally high and different strategies they can implement to reduce the consumption of electricity. These findings can be targeted to the specific audience so individuals can decrease their electricity consumption, in the long run contributing to reducing the pace of rapid climate change that is currently happening. 
 
