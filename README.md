@@ -23,7 +23,6 @@ We will explore these insights in further detail with the help of our visualizat
 
 ![](img/Summary1.png)
 ![](img/Summary4.png)
-![](img/Summary5.png)  
 ![](img/Summary3.png)
 ![](img/Summary2.png)
 
