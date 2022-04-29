@@ -60,8 +60,6 @@ After analyzing datasets as well as the research papers as mentioned above, we n
  
 1.  Countries across the world have different levels of energy consumptions due to a various factors like population, amount of commercially traded energy sources and hence we wanted to understand what the equivalent level of energy consumption was for each country. We wanted to investigate how visualizations can be used to convey this idea.
 
- 
-
 2.  We want to convey and quantify how much control each country has over climate change. Are decisions being made by the government bodies with respect to the climate hazards faced in each country? Are there steps being taken to actively implement policies to help reduce the impact of climate change? Are individuals aware of the urgency of the situations and are they participating in campaigns to reduce the impact of climate change? We want to convey these points using our visualizations.
 
 3.  We also want to focus on making it easier for countries to have     access to the change in climate on a monthly/yearly basis in the form of a visualization, rather than trying to gain insights directly from reading thousands of numbers loaded in the datasets.
@@ -70,7 +68,7 @@ After analyzing datasets as well as the research papers as mentioned above, we n
 
 5.  Given that some effects of climate change are inevitable --- which countries will be the most affected and how can they be helped?
 
- Our research also involved analyzing the market and our target audience was defined as:
+Our research also involved analyzing the market and our target audience was defined as:
 
 1)Individuals of each country will have access to these visualizations which will increase the urgency of the impact of climate change.
 
