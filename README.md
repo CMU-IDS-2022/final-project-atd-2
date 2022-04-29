@@ -22,8 +22,8 @@ We will explore these insights in further detail with the help of our visualizat
 ## SUMMARY IMAGE
 
 ![](img/Summary1.png)
-![](img/Summary2.png)
 ![](img/Summary3.png)
+![](img/Summary2.png)
 
 ## Work distribution
 
