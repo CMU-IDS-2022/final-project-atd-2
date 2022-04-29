@@ -91,7 +91,6 @@ these as listed by the United Nations are:
 > planting more trees in a snowy region might contribute to a warmer
 > climate.\[8\]
 
-** **
 
 **Analysis of Research Papers**
 
@@ -108,7 +107,7 @@ preexisting datasets.\[4\]
 
  
 
-2\) Climate and weather are two different elements in scientific
+2) Climate and weather are two different elements in scientific
 literature. Weather represents a short-term variability whereas climate
 represents trends taking place in a region over time. Hence it is
 important to make sure future projections rely on climate change and not
@@ -168,14 +167,11 @@ following:
     reduce the impact of climate change? We want to convey these points
     using our visualizations.
 
->  
-
 3.  We also want to focus on making it easier for countries to have
     access to the change in climate on a monthly/yearly basis in the
     form of a visualization, rather than trying to gain insights
     directly from reading thousands of numbers loaded in the datasets.
 
->  
 
 4.  Prediction of the energy consumed would be highly beneficial for
     each country to assess the steps they have to take with regards to
@@ -185,29 +181,20 @@ following:
     energy consumption will allow the countries to handle the energy
     demand?
 
- 
-
 5.  Given that some effects of climate change are inevitable --- which
     countries will be the most affected and how can they be helped?
-
->  
-
- 
 
  Our research also involved analyzing the market and our target audience
 was defined as:
 
-> 1)Individuals of each country will have access to these visualizations
-> which will increase the urgency of the impact of climate change.
->
-> 2)We also aim to make the visualizations useful enough to be useful
-> for government bodies of countries who will be able to make calculated
-> decisions based on the data and predictions provided via the
-> visualizations created.
->
->  
->
->  
+1)Individuals of each country will have access to these visualizations
+which will increase the urgency of the impact of climate change.
+
+2)We also aim to make the visualizations useful enough to be useful
+for government bodies of countries who will be able to make calculated
+decisions based on the data and predictions provided via the
+visualizations created.
+
 
 **Datasets**
 
