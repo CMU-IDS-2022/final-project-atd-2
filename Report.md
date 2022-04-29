@@ -344,8 +344,7 @@ plus different countries have vastly different population sizes. While
 this visualization whets the appetite of the viewer, the next
 visualization addresses these issues.
 
-![Map Description automatically
-generated](media/image2.png){width="6.5in" height="2.53125in"}
+![](img/Picture2.png)
 
 This visualization shows the per capita consumption by country on the
 side. The viewer can compare the net energy consumption and the per
@@ -359,9 +358,7 @@ The next set of visualizations are linked the world map above and they
 show important metrics like fuel source of the energy, co2 production by
 fuel, and net co2 production.
 
-![Chart, histogram Description automatically
-generated](media/image3.png){width="6.5in"
-height="1.4729166666666667in"}
+![](img/Picture3.png)
 
 When no country has been selected on the world map, these graphs show
 overall metrics for the whole world. The viewer can use these
@@ -372,15 +369,11 @@ More importantly, the viewer can select a specific country on the world
 map to first view the fuel mix and their energy contribution for that
 country. 
 
-![Chart, pie chart Description automatically
-generated](media/image4.png){width="4.035416666666666in"
-height="4.529166666666667in"}
+![](img/Picture4.png)
 
 Next come the more interesting two visualizations:
 
-![Chart Description automatically generated with low
-confidence](media/image5.png){width="6.5in"
-height="2.4611111111111112in"}
+![](img/Picture5.png)
 
 These visualizations use the methods described in the previous section
 to use this specific country's consumption and fuel data to infer what
