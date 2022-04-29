@@ -4,7 +4,15 @@
 
 **Video URL**: https://github.com/CMU-IDS-2022/final-project-atd-2/blob/main/recording.mp4
 
-Short (~250 words) abstract of the concrete data science problem and how the solutions addresses the problem.
+Climate change is an area of growing concern, and its impact can be seen in various sectors of society throughout the world. While this is a vast topic, for the purposes of our final project we have narrowed it down to a few specific areas and questions. Climate change can be analyzed in terms of increase in energy consumption, increased Co2 levels and natural disasters. However, the effects of climate change can be far more complex than what such a simple analysis would indicate. We have built visualizations that convey the subtle effects of climate change.
+
+Data Science tools and analysis plays a huge role in combating climate change. Analyzing the various data sources allowed us to come up with very insightful questions which we have answered with the help of our visualizations. 
+
+The energy consumption visualization consists of world maps incorporating heat maps which visibly reflects the amount of energy consumed by each Country in the world. But this energy consumption of each country will not be at the same level due to various external factors and hence we have also provided energy level consumed per capita to get the equivalent energy consumed across all states.
+The energy prediction chart uses the concepts of Machine learning and linear regression to estimate the amount of energy that will be consumed soon. This will allow government bodies to make calculated decisions about how to reduce the consumption.
+The Climate impact and Actions implemented graph displays the various types of climate Hazards that have occurred across Countries and will allow individuals as well as Government Organizations to understand which action is to be implemented if a certain natural disaster occurs. These actions have helped reduce the emission of carbon dioxide as well.
+We will explore these insights in further detail with the help of our visualizations.
+![image](https://user-images.githubusercontent.com/98567457/165878245-13f23cb5-1cb2-4e7a-8646-aacd33b27827.png)
 
 ## Introduction
 Climate change is increasingly becoming a very important topic across the world. Every few days, nature keeps giving us warnings of depleting natural resources and worsening climates. 
