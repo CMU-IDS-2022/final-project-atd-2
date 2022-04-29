@@ -24,6 +24,12 @@ We decided to select four key areas and come up with visualizations for the foll
 We first came up with rough sketch ideas for each area and got feedback regarding the sketches from the TA's. This allowed us to improve on areas that we were lacking in.
 Dhruv worked on the visualizations related to the energy consumption, Anam worked with the prediction visualizations, Trisha and Disha worked on the Impact of Climate change and the actions to be implemented against Climate change.
 
+## Running Instructions
+Install the dependencies:
+`pip install -r requirements.txt`
+Then run the application:
+`streamlit run streamlit_app.py`
+
 ## Deliverables
 
 ### Proposal
