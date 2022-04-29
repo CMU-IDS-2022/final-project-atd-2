@@ -197,7 +197,7 @@ def get_energypc_chart_heatmap():
                         range=['lightblue', 'yellow', 'orange', 'red']
                     ))
     base_chart = alt.Chart(countries,
-        title='Net Energy Consumption by Country'
+        title='Net Energy Consumption by Country (TWh)'
     ).mark_geoshape(stroke='white').encode(
         color=alt.condition(selector, color_range, 
                     alt.value('lightgray')
@@ -214,7 +214,7 @@ def get_energypc_chart_heatmap():
 
     energy_pc = get_energypc(with_coords=False)
     pc_chart = alt.Chart(countries,
-        title='Per Capita Energy Consumption by Country'
+        title='Per Capita Energy Consumption by Country (TWh/person)'
     ).mark_geoshape(stroke='white').encode(
         color=alt.condition(selector, alt.Color('EnergyPerCapita:Q', 
                        scale=alt.Scale(
@@ -257,7 +257,7 @@ def per_capita_energy():
 
     st.markdown("""
     ## Energy Consumption and CO2 Emissions
-    Energy production is the major driving force behind climate change. Energy production is driven by energy needs which can vary by country. The geomap has been overlayed by the net energy comsumption of that country in the year 2019. It can be seen that countries like China, Russia, India, and USA have a very high energy consumption rate.
+    Energy production is the major driving force behind climate change. Energy production is driven by energy needs which can vary by country. The geomap has been overlayed by the net energy consumption of that country in the year 2019. It can be seen that countries like China, Russia, India, and USA have a very high energy consumption rate.
     However, net energy consumption does not tell the full story. Some countries have more habitable regions and might have more people living on the same net energy. Click on the `Show Per Capita Energy` checkbox to find the per capita energy consumption by country.
 
     The worst offenders are very different if we look at it from the per capita energy perspective. Countries like UAE, USA, Saudi Arabia, and Iceland have a very high per capita energy consumption. However, it must be noted that these countries have a much higher standard of living when compared to countries like Algeria and India. 
@@ -332,7 +332,7 @@ def per_capita_energy():
         theta=alt.Theta(field="value", type="quantitative"),
         color=alt.Color(field="variable", title="Fuel Type"),
         tooltip = [alt.Tooltip('value:Q', title='Energy TWh'), alt.Tooltip('Entity', title='Country'), alt.Tooltip('variable', title='Fuel Type')],
-    ).transform_filter(selector).add_selection(selector)
+    ).transform_filter(selector).add_selection(selector).properties(width=180, height=180)
 
 
     if per_capita:
