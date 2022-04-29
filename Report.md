@@ -438,6 +438,99 @@ will also simultaneously display the amount of CO2 levels which were
 reduced on the implementation of that particular action.
 
 ## Discussion
+**Energy Consumptions and Co2 emissions**
+
+![](img/Picture10.png)
+
+The comparative visualization with the net energy consumption and per
+capita energy consumption side-by-side gives the user a complete picture
+of global hotspots of human activity and consumption. One insight that
+can be drawn from this chart is that while countries like China and
+India have a very high net consumption, it is the smaller countries like
+Iceland and Saudi Arabia that lead the world in per capita energy
+consumption.
+
+![](img/Picture11.png)
+
+Another interesting trend is that developing countries like Indonesia,
+India, and China all have significant energy being produced using coal
+and oil, which are highly emitting sources of energy.
+
+![](img/Picture12.png)
+
+This can be contrasted with Ireland which has a high reliance on
+hydroelectric power for energy. 
+
+The next visualization helps drive home the observation that coal and
+oil are in fact dirtiest fuel sources:
+
+![](img/Picture13.png)
+
+Finally, the most important insight here is that if everyone consumed
+like the developed countries, we would be in a much worse state than
+today. This is the net CO2 emissions of every country in the world
+consumed in the USA.
+
+![](img/Picture14.png)
+
+It can be seen that the net CO2 emissions are several times higher than
+the current net CO2 emissions of the world.
+
+**ENERGY CONSUMPTION PREDICTION**
+
+Looking at this analysis, the government can take necessary measures to
+plan out their investments and strategies for the upcoming years in
+order to ensure that the country's energy requirements are met. From a
+climate change perspective, this also helps a country understand that
+their energy needs are growing and there can possibly be plans in place
+to generate electricity using clean methods like water, air and solar
+energy.  The second visualization directly helps countries directly
+monitor their electricity generation using fossil fuels and renewable
+energy. Using all these analyses, the country can also plan actions to
+reduce energy consumption.
+
+**CLIMATE CHANGE IMPACT**
+
+As seen in the graph below, when we select climate hazards(displayed by
+the gray box in the scatterplot) like forest
+fires,landslides,floods,insect infestations etc ,the bar graph below
+will automatically display the total number of these disasters has
+occurred in which country.Here as we can see brazil has the highest
+number of Climate Hazards around 20 whereas Canada,China and Madagascar
+has the lowest number of these climate hazards.
+
+![](img/Picture15.png)
+
+The user can now select whichever country they want to in order to view
+what actions should be taken in order to combat each of these climate
+hazards.On selecting Brazil we can see the following action plans pop up
+in the form of a bar chart.Since Brazil is a developing country,one of
+the suggested action is education as well as community engagement.It
+extremely essential to take steps to educate the citizens of the country
+all the repercussions that climate change leads to.This will help
+increase the urgency amongst the impact of climate change.The government
+should  also allocate a part of the budget every year to implement
+various policies which helps combat climate change as well as take
+active measures to set up campaigns where people will actively
+participate to reduce the CO2 emission levels.
+
+![](img/Picture16.png)
+
+The third visualization allows the user to select a country from the
+dropdown list.It will then display the actions which were implemented in
+that country.These actions which were implemented led to a significant
+decrease in the Co2 emissions.This visualization allows the user to see
+the impact the people of the country have made by actively participating
+in the campaigns and action plans taken by the government of the
+country.For example, on selecting Peru we can see that the actions
+implemented were introduction of a secondary water treatment plan as
+well as the introduction of electric buses.This led to a decrease in the
+Co2 levels by 16 metric tonnes and 5000 metric tonnes respectively.
+
+These insights will be extremely useful to motivate more people to
+actively help combat climate change.
+
+![](img/Picture17.png)
 
 ## Future Work
 
