@@ -126,7 +126,7 @@ We implemented three different types of Visualizations:
 
 3)  **Climate Change Impact**
 
-**2) ENERGY CONSUMPTION PREDICTION**
+**2)Energy Demand and Generation Prediction**
 
 We performed a total of 4 detailed analyses of the following:
 
@@ -163,7 +163,7 @@ We performed a total of 4 detailed analyses of the following:
 
 The above methodology provides an easy and interactive way of analyzing energy demand and prediction.
 
-**3) CLIMATE CHANGE IMPACT**
+**3) Climate Change Impact**
 
 ​​With the increase in climate hazards due to climate change it is
 highly essential for each country to act against it. The visualization
@@ -213,7 +213,7 @@ Next come the more interesting two visualizations:
 
 These visualizations use the methods described in the previous section to use this specific country’s consumption and fuel data to infer what would have happened if the whole world had this level of consumption. The global CO2 emissions chart on the right shows the net CO2 emissions based on this inferred data as compared to the emissions that we have right now (red line). This can be easily used by the viewer to do a comparative analysis between the sustainability of lifestyles of people across different countries.
 
-**ENERGY CONSUMPTION PREDICTION**
+**Energy Demand and Generation Prediction**
 
 The energy demand and energy generation predictive modeling is done using data made available publicly under the Creative Commons license by “Our World in Data”.  Using the methodology detailed in the method section for electricity demand and generation, we obtain a series of visualizations(one for each country), which can be used for a detailed analysis. 
 
@@ -224,7 +224,7 @@ Let’s look at an example for the same: Suppose we want to analyze the electric
 As can be seen, there is already a trend evident from the above graph, which points to the fact that the electricity generation for the country is growing  at a faster rate than its electricity demand, and the predictions show that it is only going to continue and the gap between electricity generation and demand will further widen which is a great sign for a country.  The second visualization also shows that Canada has slowly been reducing its dependence on fossil fuels and moving towards more renewable sources of energy.
  
 
-**CLIMATE CHANGE IMPACT**
+**Climate Change Impact**
 
 ![](img/Picture7.png)
 
@@ -267,11 +267,11 @@ Finally, the most important insight here is that if everyone consumed like the d
 
 It can be seen that the net CO2 emissions are several times higher than the current net CO2 emissions of the world.
 
-**ENERGY CONSUMPTION PREDICTION**
+**Energy Demand and Generation Prediction**
 
 Looking at this analysis, the government can take necessary measures to plan out their investments and strategies for the upcoming years in order to ensure that the country's energy requirements are met. From a climate change perspective, this also helps a country understand that their energy needs are growing and there can possibly be plans in place to generate electricity using clean methods like water, air and solar energy. The second visualization directly helps countries directly monitor their electricity generation using fossil fuels and renewable energy. Using all these analyses, the country can also plan actions to reduce energy consumption.
 
-**CLIMATE CHANGE IMPACT**
+**Climate Change Impact**
 
 As seen in the graph below, when we select climate hazards(displayed by the gray box in the scatterplot) like forest fires,landslides,floods,insect infestations etc ,the bar graph below will automatically display the total number of these disasters has occurred in which country.Here as we can see brazil has the highest number of Climate Hazards around 20 whereas Canada, China and Madagascar has the lowest number of these climate hazards.
 
