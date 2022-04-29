@@ -9,7 +9,31 @@
 
 ## Work distribution
 
-Update towards the end of the project.
+We went through various datasets and research papers before finalizing
+out topic. Daily brainstorming of ideas allowed us to choose to develop
+our project on the causes and impact of Climate change. For the
+literature review process each one of us took up a research paper and
+analyzed it thoroughly to come up with interesting questions that we
+could answer.
+
+We decided to select four key areas and come up with visualizations for
+the following:
+
+1)  Energy Consumption
+
+2)  Energy Prediction
+
+3)  Impact of Climate Change
+
+4)  Actions to be implemented against Climate change
+
+We first came up with rough sketch ideas for each area and got
+feedback regarding the sketches from the TA's. This allowed us to
+improve on areas that we were lacking in.
+Dhruv worked on the visualizations related to the energy consumption,
+Anam worked with the prediction visualizations, Trisha and Disha
+worked on the Impact of Climate change and the actions to be
+implemented against Climate change.
 
 ## Deliverables
 
