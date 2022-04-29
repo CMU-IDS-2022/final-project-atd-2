@@ -27,6 +27,7 @@ We will explore these insights in further detail with the help of our visualizat
 ![](img/Summary3.png)
 ![](img/Summary2.png)
 
+
 ## Work distribution
 
 We went through various datasets and research papers before finalizing out topic. Daily brainstorming of ideas allowed us to choose to develop our project on the causes and impact of Climate change. For the literature review process each one of us took up a research paper and analyzed it thoroughly to come up with interesting questions that we could answer.
