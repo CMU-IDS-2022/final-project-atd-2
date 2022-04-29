@@ -19,6 +19,12 @@ The energy prediction chart uses the concepts of Machine learning and linear reg
 The Climate impact and Actions implemented graph displays the various types of climate Hazards that have occurred across Countries and will allow individuals as well as Government Organizations to understand which action is to be implemented if a certain natural disaster occurs. These actions have helped reduce the emission of carbon dioxide as well.
 We will explore these insights in further detail with the help of our visualizations.
 
+## SUMMARY IMAGE
+
+![](img/Summary1.png)
+![](img/Summary2.png)
+![](img/Summary3.png)
+
 ## Work distribution
 
 We went through various datasets and research papers before finalizing out topic. Daily brainstorming of ideas allowed us to choose to develop our project on the causes and impact of Climate change. For the literature review process each one of us took up a research paper and analyzed it thoroughly to come up with interesting questions that we could answer.
