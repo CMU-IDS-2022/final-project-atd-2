@@ -257,24 +257,24 @@ We performed a total of 4 detailed analyses of the following:
 of electricity demand and generation. The detailed methodology for the
 same is listed as follows:
 
-1.  [User Interaction]{.ul} - The design on our dashboard involves a
+1.  User Interaction- The design on our dashboard involves a
     selection box for country selection. The user selects a country from
     a list of all countries.
 
-2.  [Data Filtering]{.ul} - The data is filtered based on the user
+2.  Data Filtering - The data is filtered based on the user
     selection.
 
-3.  [Data Cleaning]{.ul} - The data is cleaned by dropping N/A values
+3.  Data Cleaning - The data is cleaned by dropping N/A values
     for both electricity demand and generation columns.
 
-4.  [Model Training]{.ul} - A linear regression model is fit on the
+4.  Model Training - A linear regression model is fit on the
     years vs electricity demand and years vs electricity generation.
 
-5.  [Prediction -  next 10 years]{.ul} - The linear regression model is
+5.  Prediction -  next 10 years - The linear regression model is
     then used to predict the electricity demand and generation values
     for the next 10 years.
 
-6.  [Visualization]{.ul} - The raw year-wise electricity generation and
+6.  Visualization - The raw year-wise electricity generation and
     electricity demand power is then plotted along with the regression
     plots for the same.
 
@@ -299,24 +299,18 @@ reduce the C02 levels
 2.  **Library used:** We used the python library Altair to create these
     interactive charts.
 
->  
-
 3.  **User Interactivity Graph 1:** The first scatter plot allows the
     user to make an interval selection of the different kinds of climate
     hazards. This feature was implemented by using the brush feature
     which allows a continuous selection of more than one feature. The
     plots depict the different countries as displayed in the legend.
 
->  
-
 4.  **User Interactivity Graph 2 &3:** The scatter plot is connected to
     the bar chart so that it automatically updates the number of
     disasters. We also added a selector to the graph which allows the
     user to select a particular country to view the adaption actions
     that should be implemented.
-
->  
-
+    
 5.  **User Interactivity Graph 3:** A drop down was added using the list
     and drop-down feature of python which allows a user to select a
     particular country. This allows. The selection of a particular
@@ -340,9 +334,7 @@ to identify from which countries climate change is being driven the
 most. The first visualization shows net energy consumption as a heat
 map:
 
-![A picture containing map Description automatically
-generated](media/image1.png){width="6.5in"
-height="2.7604166666666665in"}
+![](img/Picture1.png)
 
 The table on the right shows the net energy consumption by the top ten
 consuming countries. This can be quickly used by a user to get an idea
