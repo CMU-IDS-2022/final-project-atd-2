@@ -47,6 +47,7 @@ Install the dependencies:
 `pip install -r requirements.txt`
 Then run the application:
 `streamlit run streamlit_app.py`
+Please use Firefox or Chrome in Incognito mode incase the show per capita graphs do not load in your normal browser
 
 ## Deliverables
 
