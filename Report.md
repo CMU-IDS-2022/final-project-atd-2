@@ -514,7 +514,7 @@ various policies which helps combat climate change as well as take
 active measures to set up campaigns where people will actively
 participate to reduce the CO2 emission levels.
 
-![](img/Picture17.png)
+![](img/Picture18.png)
 
 The third visualization allows the user to select a country from the
 dropdown list.It will then display the actions which were implemented in
@@ -530,7 +530,7 @@ Co2 levels by 16 metric tonnes and 5000 metric tonnes respectively.
 These insights will be extremely useful to motivate more people to
 actively help combat climate change.
 
-![](img/Picture18.png)
+![](img/Picture17.png)
 
 ## Future Work
 
