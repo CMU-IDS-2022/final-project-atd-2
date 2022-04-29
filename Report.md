@@ -1,6 +1,7 @@
 # Final Project Report
 
 **Project URL**: https://share.streamlit.io/cmu-ids-2022/final-project-atd-2/main
+
 **Video URL**: https://github.com/CMU-IDS-2022/final-project-atd-2/blob/main/recording.mp4
 
 Short (~250 words) abstract of the concrete data science problem and how the solutions addresses the problem.
@@ -38,17 +39,14 @@ According to data provided by the United Nations, the cities consume about 78% o
 
 2) Climate and weather are two different elements in scientific literature. Weather represents a short-term variability whereas climate represents trends taking place in a region over time. Hence it is important to make sure future projections rely on climate change and not on weather change. There are still quite many uncertainties related to the Earths model with respect to climate, but it is essential to use any existing study to predict climate change [5].
 
- 
-
 3) Risk Perception
-In the United States of America about 63% of the population believes in climate change, however it still ranked 17 amongst a list of 19 most major issues faced in the USA [6]. Hence there is a lack of urgency amongst the government to take actions to combat climate change. There is also a study that states that the lack of disbelief between plan and action is in the way an induvial processes risk. It states that humans react less and take less action when the threat or problem is something abstract and something that they are unable to visualize.
+In the United States of America about 63% of the population believes in climate change, however it still ranked 17 amongst a list of 19 most major issues faced in the USA [6]. Hence there is a lack of urgency amongst the government to take actions to combat climate change. There is also a study that states that the lack of disbelief between plan and action is in the way an individual processes risk. It states that humans react less and take less action when the threat or problem is something abstract and something that they are unable to visualize.
 
  
 4) Unpredictability
 Since climate change cannot be contributed to just a single event it becomes quite difficult to find an exact source of the problem as well as just one solution. Every geographical location is affected differently and has different adaption actions to combat climate change. Hence every country should assess the problem of climate change not only on a global scale but on an individual level as well.
 
  
-
 After analyzing datasets as well as the research papers as mentioned above, we narrowed it down to a few specific areas and questions surrounding Energy consumption and increased levels of Co2 on a global basis. The questions we came up with during our research were the following:
 
  
@@ -119,13 +117,13 @@ After going through multiple datasets to answer the questions mentioned above we
 ## Methods
 The app has been split into three pages. The methods for each page have been described below:
 
-1)  **Energy Consumption and CO2 emissions**
+1)  **Energy Consumption and CO2 Emissions**
 
 2)  **Energy Consumption Prediction**
 
 3)  **Climate Change Impact**
 
-**1) ENERGY COMSUMPTION AND CO2 emissions**
+**1) Energy Consumption And CO2 Emissions**
 
 Datasets used: primary-energy-source-bar.csv, population-past-future.csv, and co2-emissions-by-fuel-line.csv.
 
@@ -138,7 +136,7 @@ Datasets used: primary-energy-source-bar.csv, population-past-future.csv, and co
     - Fuel mix, CO2 emissions by fuel, and CO2 emissions: Clicking on a country changes the data being shown by these visualizations. The fuel mix pie chart simply shows the contribution of each fuel type towards the energy consumption of the selected country. We take the CO2 emission per capita by fuel type of this country and apply that to the population of the entire world for the next two visualizations. The net CO2 emissions chart shows a comparison between the net CO2 emissions given the living standard of this country applied to the world vs the current net CO2 emissions of the world.  
 
 
-**2) ENERGY CONSUMPTION PREDICTION**
+**2) Energy Demand and Generation Prediction**
 
 We performed a total of 4 detailed analyses of the following:
 
@@ -175,7 +173,7 @@ We performed a total of 4 detailed analyses of the following:
 
 The above methodology provides an easy and interactive way of analyzing energy demand and prediction.
 
-**3) CLIMATE CHANGE IMPACT**
+**3) Climate Change Impact**
 
 ​​With the increase in climate hazards due to climate change it is
 highly essential for each country to act against it. The visualization
@@ -225,7 +223,7 @@ Next come the more interesting two visualizations:
 
 These visualizations use the methods described in the previous section to use this specific country’s consumption and fuel data to infer what would have happened if the whole world had this level of consumption. The global CO2 emissions chart on the right shows the net CO2 emissions based on this inferred data as compared to the emissions that we have right now (red line). This can be easily used by the viewer to do a comparative analysis between the sustainability of lifestyles of people across different countries.
 
-**ENERGY CONSUMPTION PREDICTION**
+**Energy Demand and Generation Prediction**
 
 The energy demand and energy generation predictive modeling is done using data made available publicly under the Creative Commons license by “Our World in Data”.  Using the methodology detailed in the method section for electricity demand and generation, we obtain a series of visualizations(one for each country), which can be used for a detailed analysis. 
 
@@ -236,9 +234,10 @@ Let’s look at an example for the same: Suppose we want to analyze the electric
 As can be seen, there is already a trend evident from the above graph, which points to the fact that the electricity generation for the country is growing  at a faster rate than its electricity demand, and the predictions show that it is only going to continue and the gap between electricity generation and demand will further widen which is a great sign for a country.  The second visualization also shows that Canada has slowly been reducing its dependence on fossil fuels and moving towards more renewable sources of energy.
  
 
-**CLIMATE CHANGE IMPACT**
+
 
 ![](img/Picture7.png)
+**Climate Change Impact**
 
 The first scatter plot graph displays the climate hazards occurring in countries with respect to the population of each country.The user can select an interval from the scatter plot.This feature allows the user to view multiple climate hazards which has occured in the countries.The countries are color coded as displayed in the legend on the right and multiple countries can be selected once.
 
@@ -279,11 +278,11 @@ Finally, the most important insight here is that if everyone consumed like the d
 
 It can be seen that the net CO2 emissions are several times higher than the current net CO2 emissions of the world.
 
-**ENERGY CONSUMPTION PREDICTION**
+**Energy Demand and Generation Prediction**
 
 Looking at this analysis, the government can take necessary measures to plan out their investments and strategies for the upcoming years in order to ensure that the country's energy requirements are met. From a climate change perspective, this also helps a country understand that their energy needs are growing and there can possibly be plans in place to generate electricity using clean methods like water, air and solar energy. The second visualization directly helps countries directly monitor their electricity generation using fossil fuels and renewable energy. Using all these analyses, the country can also plan actions to reduce energy consumption.
 
-**CLIMATE CHANGE IMPACT**
+**Climate Change Impact**
 
 As seen in the graph below, when we select climate hazards(displayed by the gray box in the scatterplot) like forest fires,landslides,floods,insect infestations etc ,the bar graph below will automatically display the total number of these disasters has occurred in which country.Here as we can see brazil has the highest number of Climate Hazards around 20 whereas Canada, China and Madagascar has the lowest number of these climate hazards.
 

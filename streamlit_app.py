@@ -352,6 +352,8 @@ def energy_forecast():
     ### Predicting energy production and demand based on current growth rate
 
     """)
+    
+    st.write("The goal of this predictive modeling is to identify countries who have not been able to meet their electricity demand with their electricity generation, to identify opportunities of excess electricity generation, and to do efficient energy planning for the upcoming years. We also perform an analysis to check the electricity generated using fossil fuels and renewable sources of energy.")
 
 
 
