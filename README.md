@@ -1,8 +1,8 @@
 # CMU Interactive Data Science Final Project
 
 * **Online URL**: https://share.streamlit.io/cmu-ids-2022/final-project-atd-2/main
-* **Report Link**:https://github.com/CMU-IDS-2022/final-project-atd-2/blob/main/Report.md
-* **Video Recording Link**:https://github.com/CMU-IDS-2022/final-project-atd-2/blob/main/recording.mp4
+* **Report Link**: https://github.com/CMU-IDS-2022/final-project-atd-2/blob/main/Report.md
+* **Video Recording Link**: https://github.com/CMU-IDS-2022/final-project-atd-2/blob/main/recording.mp4
 * **Team members**:
   * Contact person: tkalia@andrew.cmu.edu 
   * dpoddar@andrew.cmu.edu 
@@ -19,7 +19,7 @@ The energy prediction chart uses the concepts of Machine learning and linear reg
 The Climate impact and Actions implemented graph displays the various types of climate Hazards that have occurred across Countries and will allow individuals as well as Government Organizations to understand which action is to be implemented if a certain natural disaster occurs. These actions have helped reduce the emission of carbon dioxide as well.
 We will explore these insights in further detail with the help of our visualizations.
 
-## SUMMARY IMAGE
+## Summary Image
 
 ![](img/Summary1.png)
 ![](img/Summary4.png)
