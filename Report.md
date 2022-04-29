@@ -32,12 +32,13 @@ Lastly, we conduct a detailed analysis of disasters by country and population. T
 Climate change is an area of growing concern, and it is an extremely vast domain. While brainstorming and researching, we came across various factors which play a huge role in the onset of climate change. Some of these as listed by the United Nations are:
  
 1)The generation of power and increased Co2 levels
-The generation of electricity by the burning of fossil fuels results in the emission of a large amount of greenhouse gases such as carbon dioxide which in turn traps the suns heat. Cities across the world produce around 60% of the greenhouse gas emissions [1]. Households contribute to about 21% per cent of resultant CO2 emissions [2].
+>The generation of electricity by the burning of fossil fuels results in the emission of a large amount of greenhouse gases such as carbon dioxide which in turn traps the suns heat. Cities across the world produce around 60% of the greenhouse gas emissions [1]. Households contribute to about 21% per cent of resultant CO2 emissions [2].
  
 2)Energy consumption
-According to data provided by the United Nations, the cities consume about 78% of the world’s energy [1]. Even though there have been several technological advances, it is predicted that the energy consumption will increase by 35% in the upcoming year [2].
+>According to data provided by the United Nations, the cities consume about 78% of the world’s energy [1]. Even though there have been several technological advances, it is predicted that the energy consumption will increase by 35% in the upcoming year [2].
  
-3)Deforestation Cutting down of trees in forest lands leads to a heavy increase of around 23% of man-made Co2 emissions. Forests also have a major effect on the local weather of each area. Even if we take steps of replanting trees in other areas, it can lead to climate change. For example, planting more trees in a snowy region might contribute to a warmer climate [8].
+3)Deforestation 
+>Cutting down of trees in forest lands leads to a heavy increase of around 23% of man-made Co2 emissions. Forests also have a major effect on the local weather of each area. Even if we take steps of replanting trees in other areas, it can lead to climate change. For example, planting more trees in a snowy region might contribute to a warmer climate [8].
 
 
 **Analysis of Research Papers**
