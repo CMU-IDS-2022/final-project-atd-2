@@ -30,12 +30,13 @@ Lastly, we conduct a detailed analysis of disasters by country and population. T
 Climate change is an area of growing concern, and it is an extremely vast domain. While brainstorming and researching, we came across various factors which play a huge role in the onset of climate change. Some of these as listed by the United Nations are:
  
 1)The generation of power and increased Co2 levels
-The generation of electricity by the burning of fossil fuels results in the emission of a large amount of greenhouse gases such as carbon dioxide which in turn traps the suns heat. Cities across the world produce around 60% of the greenhouse gas emissions [1]. Households contribute to about 21% per cent of resultant CO2 emissions [2].
+>The generation of electricity by the burning of fossil fuels results in the emission of a large amount of greenhouse gases such as carbon dioxide which in turn traps the suns heat. Cities across the world produce around 60% of the greenhouse gas emissions [1]. Households contribute to about 21% per cent of resultant CO2 emissions [2].
  
 2)Energy consumption
-According to data provided by the United Nations, the cities consume about 78% of the world’s energy [1]. Even though there have been several technological advances, it is predicted that the energy consumption will increase by 35% in the upcoming year [2].
+>According to data provided by the United Nations, the cities consume about 78% of the world’s energy [1]. Even though there have been several technological advances, it is predicted that the energy consumption will increase by 35% in the upcoming year [2].
  
-3)Deforestation Cutting down of trees in forest lands leads to a heavy increase of around 23% of man-made Co2 emissions. Forests also have a major effect on the local weather of each area. Even if we take steps of replanting trees in other areas, it can lead to climate change. For example, planting more trees in a snowy region might contribute to a warmer climate [8].
+3)Deforestation 
+>Cutting down of trees in forest lands leads to a heavy increase of around 23% of man-made Co2 emissions. Forests also have a major effect on the local weather of each area. Even if we take steps of replanting trees in other areas, it can lead to climate change. For example, planting more trees in a snowy region might contribute to a warmer climate [8].
 
 
 **Analysis of Research Papers**
@@ -46,19 +47,14 @@ According to data provided by the United Nations, the cities consume about 78% o
 
 3) Risk Perception
 In the United States of America about 63% of the population believes in climate change, however it still ranked 17 amongst a list of 19 most major issues faced in the USA [6]. Hence there is a lack of urgency amongst the government to take actions to combat climate change. There is also a study that states that the lack of disbelief between plan and action is in the way an individual processes risk. It states that humans react less and take less action when the threat or problem is something abstract and something that they are unable to visualize.
-
  
 4) Unpredictability
 Since climate change cannot be contributed to just a single event it becomes quite difficult to find an exact source of the problem as well as just one solution. Every geographical location is affected differently and has different adaption actions to combat climate change. Hence every country should assess the problem of climate change not only on a global scale but on an individual level as well.
 
- 
 After analyzing datasets as well as the research papers as mentioned above, we narrowed it down to a few specific areas and questions surrounding Energy consumption and increased levels of Co2 on a global basis. The questions we came up with during our research were the following:
 
  
 1.  Countries across the world have different levels of energy consumptions due to a various factors like population, amount of commercially traded energy sources and hence we wanted to understand what the equivalent level of energy consumption was for each country. We wanted to investigate how visualizations can be used to convey this idea.
-
- 
-
 2.  We want to convey and quantify how much control each country has over climate change. Are decisions being made by the government bodies with respect to the climate hazards faced in each country? Are there steps being taken to actively implement policies to help reduce the impact of climate change? Are individuals aware of the urgency of the situations and are they participating in campaigns to reduce the impact of climate change? We want to convey these points using our visualizations.
 
 3.  We also want to focus on making it easier for countries to have     access to the change in climate on a monthly/yearly basis in the form of a visualization, rather than trying to gain insights directly from reading thousands of numbers loaded in the datasets.
@@ -67,7 +63,7 @@ After analyzing datasets as well as the research papers as mentioned above, we n
 
 5.  Given that some effects of climate change are inevitable --- which countries will be the most affected and how can they be helped?
 
- Our research also involved analyzing the market and our target audience was defined as:
+Our research also involved analyzing the market and our target audience was defined as:
 
 1)Individuals of each country will have access to these visualizations which will increase the urgency of the impact of climate change.
 
@@ -124,7 +120,7 @@ The app has been split into three pages. The methods for each page have been des
 
 1)  **Energy Consumption and CO2 Emissions**
 
-2)  **Energy Consumption Prediction**
+2)  **Energy Demand and Generation Prediction**
 
 3)  **Climate Change Impact**
 

@@ -1,8 +1,8 @@
 # CMU Interactive Data Science Final Project
 
-* **Online URL**: https://share.streamlit.io/cmu-ids-2022/final-project-atd-2/main
-* **Report Link**:https://github.com/CMU-IDS-2022/final-project-atd-2/blob/main/Report.md
-* **Video Recording Link**:https://github.com/CMU-IDS-2022/final-project-atd-2/blob/main/recording.mp4
+* **Application Link**: https://share.streamlit.io/cmu-ids-2022/final-project-atd-2/main
+* **Report Link**: https://github.com/CMU-IDS-2022/final-project-atd-2/blob/main/Report.md
+* **Video Recording Link**: https://github.com/CMU-IDS-2022/final-project-atd-2/blob/main/recording.mp4
 * **Team members**:
   * Contact person: tkalia@andrew.cmu.edu 
   * dpoddar@andrew.cmu.edu 
@@ -17,7 +17,7 @@ The energy prediction chart uses linear regression to estimate energy demand and
 
 The Climate Impact and Actions Implemented graph displays the various types of climate hazards that have occurred across countries and will allow individuals as well as government organizations to understand which action is to be implemented if a certain natural disaster occurs. The impact of these actions in terms of reduction in CO2 levels has also been visualized.
 
-## SUMMARY IMAGE
+## Summary Image
 
 ![](img/Summary1.png)
 ![](img/Summary4.png)
