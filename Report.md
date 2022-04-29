@@ -49,17 +49,14 @@ Climate change is an area of growing concern, and it is an extremely vast domain
 
 3) Risk Perception
 In the United States of America about 63% of the population believes in climate change, however it still ranked 17 amongst a list of 19 most major issues faced in the USA [6]. Hence there is a lack of urgency amongst the government to take actions to combat climate change. There is also a study that states that the lack of disbelief between plan and action is in the way an individual processes risk. It states that humans react less and take less action when the threat or problem is something abstract and something that they are unable to visualize.
-
  
 4) Unpredictability
 Since climate change cannot be contributed to just a single event it becomes quite difficult to find an exact source of the problem as well as just one solution. Every geographical location is affected differently and has different adaption actions to combat climate change. Hence every country should assess the problem of climate change not only on a global scale but on an individual level as well.
 
- 
 After analyzing datasets as well as the research papers as mentioned above, we narrowed it down to a few specific areas and questions surrounding Energy consumption and increased levels of Co2 on a global basis. The questions we came up with during our research were the following:
 
  
 1.  Countries across the world have different levels of energy consumptions due to a various factors like population, amount of commercially traded energy sources and hence we wanted to understand what the equivalent level of energy consumption was for each country. We wanted to investigate how visualizations can be used to convey this idea.
-
 2.  We want to convey and quantify how much control each country has over climate change. Are decisions being made by the government bodies with respect to the climate hazards faced in each country? Are there steps being taken to actively implement policies to help reduce the impact of climate change? Are individuals aware of the urgency of the situations and are they participating in campaigns to reduce the impact of climate change? We want to convey these points using our visualizations.
 
 3.  We also want to focus on making it easier for countries to have     access to the change in climate on a monthly/yearly basis in the form of a visualization, rather than trying to gain insights directly from reading thousands of numbers loaded in the datasets.
@@ -125,7 +122,7 @@ The app has been split into three pages. The methods for each page have been des
 
 1)  **Energy Consumption and CO2 Emissions**
 
-2)  **Energy Consumption Prediction**
+2)  **Energy Demand and Generation Prediction**
 
 3)  **Climate Change Impact**
 
