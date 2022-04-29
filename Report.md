@@ -536,4 +536,91 @@ actively help combat climate change.
 ![](img/Picture17.png)
 
 ## Future Work
+Stopping global warming is a combined global effort. Recently, during
+the United Nations climate convention there was a consensus for the
+political and business community to come together to stop climate
+change.  Our visualizations have showcased the dire need for everyone to
+come together to stop the rapid change in climate. With the help of the
+insights from these visualizations we can help make a change in the real
+world and avoid the drastic climate change currently being experienced
+globally. 
+
+The regression analysis that we carried out on our dataset was very
+helpful in generating a predictive model based on energy demand and
+generation. This predictive modeling proves to be very useful in
+understanding the future patterns a country is  looking at if no action
+is taken. This can be very useful to bring to notice to the governments
+of countries to immediately take action. Further analyses on these
+predictions could include specific regions within the country where
+electricity demand is exceptionally high and different strategies they
+can implement to reduce the consumption of electricity. These findings
+can be targeted to the specific audience so individuals can decrease
+their electricity consumption, in the long run contributing to reducing
+the pace of rapid climate change that is currently happening. 
+
+The interactive world map is very engaging and insightful and can be
+used in classrooms to catch the attention of children on the trends of
+sources of energy and its contribution to climate change. The heat map
+definitely adds to the impact of different energy sources on the
+country. These findings can be extended to schools  or a TED talk to
+spread awareness amongst everyone, especially young adults who can make
+an impact by choosing to use renewable energy. While the world map will
+help give a comparative analysis of net energy consumption and per
+capita energy consumption side-by-side we can further explore other
+datasets to include common renewable energy sources that some
+governments are adapting to. Many governments have different climate
+agenda and are shifting focus to more efficient buildings and vehicles
+and incorporating other existing technologies such as wind and solar
+energy. We would love to explore the impact of such energy sources on
+the country and its contribution to carbon emissions and hence climate
+change. 
+
+The visualization of the number of people in different countries
+impacted by climate hazards is concerning. This tool can be used further
+as a predictive model as well. For instance, if a country is predicted
+in recent years to  experience a similar climate hazard as the climate
+of the country predicts, certain action plans can be implemented to
+restrict the damage of the calamity.  Countries predicted to experience
+a climate hazard can implement strategies based on an action plan that
+has worked in the past for other countries.   
+
+We are looking forward to exploring and applying our visualizations in
+the future to create an impact. 
+
+References
+
+\[1\] United Nations. (2020). Generating power.
+<https://www.un.org/en/climatechange/climate-solutions/cities-pollution>
+
+\[2\] M., Chassagne, T., Chassagne, T., M., A, R., M., D., & M. (2020,
+August 11). Sustainable consumption and production. United Nations
+Sustainable Development.
+<https://www.un.org/sustainabledevelopment/sustainable-consumption-production/>
+
+\[3\] Reporter, G. S. (2021, August 25). How do trees and forests relate
+to climate change? The Guardian.
+<https://www.theguardian.com/environment/2011/feb/11/forests-trees-climate>
+
+\[4\] WMO. (2015). Climate projections. Retrieved from
+<https://www.wmo.int/pages/themes/climate/climate_projections.php>.
+
+\[5\] Moser, S. C. (2010). Communicating climate change: History,
+challenges, process and future directions. Wiley Interdisciplinary
+Reviews: Climate Change, 1, 31--53. doi:10.1002/wcc.11
+
+\[6\] Leiserowitz, A., Maibach, E., Roser-Renouf, C., Feinberg, G., &
+Rosenthal, S. (2014b). Politics & global warming, Spring 2014. Yale
+University and George Mason University. New Haven, CT: Yale Project on
+Climate Change Communication.
+
+\[7\] Weber, E. U. (2006). Experience-based and description-based
+perceptions of long-term risk: Why global warming does not scare us
+(yet). Climatic Change, 77, 103--120. doi:10.1007/s10584-006-9060-3
+
+\[8\] Wilby, R. L., Charles, S. P., Zorita, E., Timbal, B., Whetton, P.,
+& Mearns, L. O. (2004). Guidelines for use of climate scenarios
+developed from statistical downscaling methods. Geneva: IPCC Task Group
+on Data and Scenario Support for Impact and Climate Analysis (TGICA).
+Retrieved from <http://ipcc-ddc.cru.uea.ac.uk/guidelines/index.html>
+
 
