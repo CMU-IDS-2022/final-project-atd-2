@@ -1,6 +1,6 @@
 # CMU Interactive Data Science Final Project
 
-* **Online URL**: https://share.streamlit.io/cmu-ids-2022/final-project-atd-2/main
+* **Application Link**: https://share.streamlit.io/cmu-ids-2022/final-project-atd-2/main
 * **Report Link**: https://github.com/CMU-IDS-2022/final-project-atd-2/blob/main/Report.md
 * **Video Recording Link**: https://github.com/CMU-IDS-2022/final-project-atd-2/blob/main/recording.mp4
 * **Team members**:
