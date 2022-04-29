@@ -12,7 +12,6 @@ The energy consumption visualization consists of world maps incorporating heat m
 The energy prediction chart uses the concepts of Machine learning and linear regression to estimate the amount of energy that will be consumed soon. This will allow government bodies to make calculated decisions about how to reduce the consumption.
 The Climate impact and Actions implemented graph displays the various types of climate Hazards that have occurred across Countries and will allow individuals as well as Government Organizations to understand which action is to be implemented if a certain natural disaster occurs. These actions have helped reduce the emission of carbon dioxide as well.
 We will explore these insights in further detail with the help of our visualizations.
-![image](https://user-images.githubusercontent.com/98567457/165878245-13f23cb5-1cb2-4e7a-8646-aacd33b27827.png)
 
 ## Introduction
 Climate change is increasingly becoming a very important topic across the world. Every few days, nature keeps giving us warnings of depleting natural resources and worsening climates. 
