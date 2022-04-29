@@ -384,6 +384,59 @@ right now (red line). This can be easily used by the viewer to do a
 comparative analysis between the sustainability of lifestyles of people
 across different countries.
 
+**ENERGY CONSUMPTION PREDICTION**
+
+The energy demand and energy generation predictive modeling is done
+using data made available publicly under the Creative Commons license by
+"Our World in Data".  Using the methodology detailed in the method
+section for electricity demand and generation, we obtain a series of
+visualizations(one for each country), which can be used for a detailed
+analysis. 
+
+Let's look at an example for the same: Suppose we want to analyze the
+electricity demand and generation for Canada,  Our tool generates the
+following visualizations:
+
+![](img/Picture6.png)
+
+As can be seen, there is already a trend evident from the above graph,
+which points to the fact that the electricity generation for the country
+is growing  at a faster rate than its electricity demand, and the
+predictions show that it is only going to continue and the gap between
+electricity generation and demand will further widen which is a great
+sign for a country.  The second visualization also shows that Canada has
+slowly been reducing its dependence on fossil fuels and moving towards
+more renewable sources of energy.
+
+ 
+
+**CLIMATE CHANGE IMPACT**
+
+![](img/Picture7.png)
+
+The first scatter plot graph displays the climate hazards occurring in
+countries with respect to the population of each country.The user can
+select an interval from the scatter plot.This feature allows the user to
+view multiple climate hazards which has occured in the countries.The
+countries are color coded as displayed in the legend on the right and
+multiple countries can be selected once.
+
+![](img/Picture8.png)
+
+This second bar chart will automatically change depending on the
+interval selection.This allows the user to see which country had the
+highest number of disasters.It will change depending upon which climate
+hazards were selected in the scatter plot in the above graph and hence
+it is multi connected.
+
+![](img/Picture9.png)
+
+The third visualization consists of a drop down which allows the user to
+select the country that they want.On the selection of the country,it
+will display the population of the country in the form a bar chart.It
+will also simultaneously display the amount of CO2 levels which were
+reduced on the implementation of that particular action.
+
 ## Discussion
 
 ## Future Work
