@@ -9,7 +9,7 @@
   * dhruvary@andrew.cmu.edu 
   * anami@andrew.cmu.edu 
   
-## Summary
+## Abstract
 Climate change is an area of growing concern, and its impact can be seen in various sectors of society throughout the world. While this is a vast topic, for the purposes of our final project we have narrowed it down to a few specific areas and questions. Climate change can be analyzed in terms of increase in energy consumption, increased Co2 levels and natural disasters. However, the effects of climate change can be far more complex than what such a simple analysis would indicate. We have built visualizations that convey the subtle effects of climate change.
 
 Data Science tools and analysis plays a huge role in combating climate change. Analyzing the various data sources allowed us to come up with very insightful questions which we have answered with the help of our visualizations. 
