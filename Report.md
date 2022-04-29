@@ -437,6 +437,9 @@ will display the population of the country in the form a bar chart.It
 will also simultaneously display the amount of CO2 levels which were
 reduced on the implementation of that particular action.
 
+![](img/Picture18.png)
+
+
 ## Discussion
 **Energy Consumptions and Co2 emissions**
 
