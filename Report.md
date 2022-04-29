@@ -63,41 +63,31 @@ these as listed by the United Nations are:
 
  
 
-> 1)The generation of power and increased Co2 levels
->
-> The generation of electricity by the burning of fossil fuels results
-> in the emission of a large amount of greenhouse gases such as carbon
-> dioxide which in turn traps the suns heat. Cities across the world
-> produce around 60% of the greenhouse gas emissions.\[1\] Households
-> contribute to about 21% per cent of resultant CO2 emissions.\[2\]
->
->  
->
-> 2)Energy consumption
->
-> According to data provided by the United Nations, the cities consume
-> about 78% of the world's energy.\[1\] Even though there have been
-> several technological advances, it is predicted that the energy
-> consumption will increase by 35% in the upcoming year.\[2\]
+1)The generation of power and increased Co2 levels
+The generation of electricity by the burning of fossil fuels results
+in the emission of a large amount of greenhouse gases such as carbon
+dioxide which in turn traps the suns heat. Cities across the world
+produce around 60% of the greenhouse gas emissions.Households
+ contribute to about 21% per cent of resultant CO2 emissions.
 
- 
+2)Energy consumption
+According to data provided by the United Nations, the cities consume
+about 78% of the world's energy.\[1\] Even though there have been
+several technological advances, it is predicted that the energy
+consumption will increase by 35% in the upcoming year.
 
-> 3)Deforestation
->
-> Cutting down of trees in forest lands leads to a heavy increase of
-> around 23% of man-made Co2 emissions. Forests also have a major effect
-> on the local weather of each area. Even if we take steps of replanting
-> trees in other areas, it can lead to climate change. For example,
-> planting more trees in a snowy region might contribute to a warmer
-> climate.\[8\]
+3)Deforestation
+Cutting down of trees in forest lands leads to a heavy increase of
+around 23% of man-made Co2 emissions. Forests also have a major effect
+on the local weather of each area. Even if we take steps of replanting
+trees in other areas, it can lead to climate change. For example,
+planting more trees in a snowy region might contribute to a warmer
+climate.
 
 
 **Analysis of Research Papers**
 
- 
-
 1)Communicating Climate Risk
-
 As mentioned in the analysis done by the World Meteorological
 Organization, to combat climate change, it is very important to rely on
 climate prediction as it will help us make calculated decisions. Climate
@@ -105,9 +95,7 @@ projection is a scientific informed decision being made. There are two
 steps in this, one involving the science and second is the analysis of
 preexisting datasets.\[4\]
 
- 
-
-2) Climate and weather are two different elements in scientific
+2)Climate and weather are two different elements in scientific
 literature. Weather represents a short-term variability whereas climate
 represents trends taking place in a region over time. Hence it is
 important to make sure future projections rely on climate change and not
@@ -118,7 +106,6 @@ existing study to predict climate change.\[5\]
  
 
 3)Risk Perception
-
 In the United States of America about 63% of the population believes in
 climate change, however it still ranked 17 amongst a list of 19 most
 major issues faced in the USA.\[6\] Hence there is a lack of urgency
@@ -129,9 +116,7 @@ react less and take less action when the threat or problem is something
 abstract and something that they are unable to visualize.
 
  
-
 4)Unpredictability
-
 Since climate change cannot be contributed to just a single event it
 becomes quite difficult to find an exact source of the problem as well
 as just one solution. Every geographical location is affected
@@ -148,7 +133,6 @@ basis. The questions we came up with during our research were the
 following:
 
  
-
 1.  Countries across the world have different levels of energy
     consumptions due to a various factors like population, amount of
     commercially traded energy sources and hence we wanted to understand
@@ -171,7 +155,6 @@ following:
     access to the change in climate on a monthly/yearly basis in the
     form of a visualization, rather than trying to gain insights
     directly from reading thousands of numbers loaded in the datasets.
-
 
 4.  Prediction of the energy consumed would be highly beneficial for
     each country to assess the steps they have to take with regards to
