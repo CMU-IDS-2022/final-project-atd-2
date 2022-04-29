@@ -39,17 +39,13 @@ Cutting down of trees in forest lands leads to a heavy increase of around 23% of
 
 2) Climate and weather are two different elements in scientific literature. Weather represents a short-term variability whereas climate represents trends taking place in a region over time. Hence it is important to make sure future projections rely on climate change and not on weather change. There are still quite many uncertainties related to the Earths model with respect to climate, but it is essential to use any existing study to predict climate change.[5]
 
- 
-
 3) Risk Perception
 In the United States of America about 63% of the population believes in climate change, however it still ranked 17 amongst a list of 19 most major issues faced in the USA.[6] Hence there is a lack of urgency amongst the government to take actions to combat climate change. There is also a study that states that the lack of disbelief between plan and action is in the way an induvial processes risk. It states that humans react less and take less action when the threat or problem is something abstract and something that they are unable to visualize.
-
  
 4) Unpredictability
 Since climate change cannot be contributed to just a single event it becomes quite difficult to find an exact source of the problem as well as just one solution. Every geographical location is affected differently and has different adaption actions to combat climate change. Hence every country should assess the problem of climate change not only on a global scale but on an individual level as well.
 
  
-
 After analyzing datasets as well as the research papers as mentioned above, we narrowed it down to a few specific areas and questions surrounding Energy consumption and increased levels of Co2 on a global basis. The questions we came up with during our research were the following:
 
  
