@@ -220,9 +220,10 @@ Let’s look at an example for the same: Suppose we want to analyze the electric
 As can be seen, there is already a trend evident from the above graph, which points to the fact that the electricity generation for the country is growing  at a faster rate than its electricity demand, and the predictions show that it is only going to continue and the gap between electricity generation and demand will further widen which is a great sign for a country.  The second visualization also shows that Canada has slowly been reducing its dependence on fossil fuels and moving towards more renewable sources of energy.
  
 
-**Climate Change Impact**
+
 
 ![](img/Picture7.png)
+**Climate Change Impact**
 
 The first scatter plot graph displays the climate hazards occurring in countries with respect to the population of each country.The user can select an interval from the scatter plot.This feature allows the user to view multiple climate hazards which has occured in the countries.The countries are color coded as displayed in the legend on the right and multiple countries can be selected once.
 
