@@ -1,7 +1,7 @@
 # Final Project Report
 
-**Project URL**: TODO
-**Video URL**: TODO
+**Project URL**: https://share.streamlit.io/cmu-ids-2022/final-project-atd-2/main
+**Video URL**: https://github.com/CMU-IDS-2022/final-project-atd-2/blob/main/recording.mp4
 
 Short (~250 words) abstract of the concrete data science problem and how the solutions addresses the problem.
 
