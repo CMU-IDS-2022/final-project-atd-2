@@ -471,7 +471,7 @@ like the developed countries, we would be in a much worse state than
 today. This is the net CO2 emissions of every country in the world
 consumed in the USA.
 
-![](img/Picture14.png)
+![](img/Picture15.png)
 
 It can be seen that the net CO2 emissions are several times higher than
 the current net CO2 emissions of the world.
@@ -499,7 +499,7 @@ occurred in which country.Here as we can see brazil has the highest
 number of Climate Hazards around 20 whereas Canada,China and Madagascar
 has the lowest number of these climate hazards.
 
-![](img/Picture15.png)
+![](img/Picture16.png)
 
 The user can now select whichever country they want to in order to view
 what actions should be taken in order to combat each of these climate
@@ -514,7 +514,7 @@ various policies which helps combat climate change as well as take
 active measures to set up campaigns where people will actively
 participate to reduce the CO2 emission levels.
 
-![](img/Picture16.png)
+![](img/Picture17.png)
 
 The third visualization allows the user to select a country from the
 dropdown list.It will then display the actions which were implemented in
@@ -530,7 +530,7 @@ Co2 levels by 16 metric tonnes and 5000 metric tonnes respectively.
 These insights will be extremely useful to motivate more people to
 actively help combat climate change.
 
-![](img/Picture17.png)
+![](img/Picture18.png)
 
 ## Future Work
 
