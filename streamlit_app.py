@@ -340,6 +340,11 @@ def per_capita_energy():
             Click on a country to apply its consumption rate to the world.
         """)
         st.write(((geo_map1 | geo_map2).resolve_scale(color='independent') & (energy_mix_chart | co2_chart | co2_chart_full).resolve_scale(color='independent')).resolve_scale(color='independent'))
+        st.markdown("""
+        ### Key Insights
+        1. While the net energy consumption of countries like China and India is high, in terms of per capita consumption, countries like Saudi Arabia, USA, and Canada lead the world.
+        2. The whole world living like the average citizen of a developed country would be disastrous in terms of net CO2 emissions.
+        """)
     else:
         table_df = df_energy_mix[['Entity', 'TotalEnergy']].sort_values(['TotalEnergy'], ascending=False)
         table_df = table_df[~table_df.Entity.isin(('World', 'Asia Pacific', 'OECD', 'Non-OECD', 'European Union', 'Middle East', 'Africa', 'South & Central America', 'North America', 'Europe', 'CIS'))]
@@ -498,7 +503,11 @@ def energy_forecast():
             as_=["Renewable electricity share", "y"]
         ).encode(alt.Color("Renewable electricity share:N"))
 
-        #   st.write("Note: The above plot does not consider electricity generated using other sources like oil, gas and others.")
+        st.markdown("""
+        ### Key Insights
+        1. Developed countries like UK, Canada, and USA have a very small gap between energy demand and generation as compared to countries like Afghanistan.
+        2. A general trend of decrease on reliance on fossil fuel and a shift towards renewable energy can be observed for almost all the countries.        
+        """)
 
     except Exception as e:
         print(e)
