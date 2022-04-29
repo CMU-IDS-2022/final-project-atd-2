@@ -29,20 +29,19 @@ The generation of electricity by the burning of fossil fuels results in the emis
 2)Energy consumption
 According to data provided by the United Nations, the cities consume about 78% of the world’s energy [1]. Even though there have been several technological advances, it is predicted that the energy consumption will increase by 35% in the upcoming year [2].
  
-3)Deforestation
-Cutting down of trees in forest lands leads to a heavy increase of around 23% of man-made Co2 emissions. Forests also have a major effect on the local weather of each area. Even if we take steps of replanting trees in other areas, it can lead to climate change. For example, planting more trees in a snowy region might contribute to a warmer climate [8].
+3)Deforestation Cutting down of trees in forest lands leads to a heavy increase of around 23% of man-made Co2 emissions. Forests also have a major effect on the local weather of each area. Even if we take steps of replanting trees in other areas, it can lead to climate change. For example, planting more trees in a snowy region might contribute to a warmer climate [8].
 
 
 **Analysis of Research Papers**
 
-1) Communicating Climate Risk As mentioned in the analysis done by the World Meteorological Organization, to combat climate change, it is very important to rely on climate prediction as it will help us make calculated decisions. Climate projection is a scientific informed decision being made. There are two steps in this, one involving the science and second is the analysis of preexisting datasets.[4]
+1) Communicating Climate Risk As mentioned in the analysis done by the World Meteorological Organization, to combat climate change, it is very important to rely on climate prediction as it will help us make calculated decisions. Climate projection is a scientific informed decision being made. There are two steps in this, one involving the science and second is the analysis of preexisting datasets [4].
 
-2) Climate and weather are two different elements in scientific literature. Weather represents a short-term variability whereas climate represents trends taking place in a region over time. Hence it is important to make sure future projections rely on climate change and not on weather change. There are still quite many uncertainties related to the Earths model with respect to climate, but it is essential to use any existing study to predict climate change.[5]
+2) Climate and weather are two different elements in scientific literature. Weather represents a short-term variability whereas climate represents trends taking place in a region over time. Hence it is important to make sure future projections rely on climate change and not on weather change. There are still quite many uncertainties related to the Earths model with respect to climate, but it is essential to use any existing study to predict climate change [5].
 
  
 
 3) Risk Perception
-In the United States of America about 63% of the population believes in climate change, however it still ranked 17 amongst a list of 19 most major issues faced in the USA.[6] Hence there is a lack of urgency amongst the government to take actions to combat climate change. There is also a study that states that the lack of disbelief between plan and action is in the way an induvial processes risk. It states that humans react less and take less action when the threat or problem is something abstract and something that they are unable to visualize.
+In the United States of America about 63% of the population believes in climate change, however it still ranked 17 amongst a list of 19 most major issues faced in the USA [6]. Hence there is a lack of urgency amongst the government to take actions to combat climate change. There is also a study that states that the lack of disbelief between plan and action is in the way an induvial processes risk. It states that humans react less and take less action when the threat or problem is something abstract and something that they are unable to visualize.
 
  
 4) Unpredictability
@@ -90,7 +89,7 @@ After going through multiple datasets to answer the questions mentioned above we
 >
 > This dataset has historical population by country.
 
--   Co2-emissions-by-fuel-line.csv
+-   co2-emissions-by-fuel-line.csv
 
 > Source: ([[https://ourworldindata.org)]{.ul}](about:blank)
 > This dataset has CO2 emissions by fuel type per country.
@@ -118,13 +117,26 @@ After going through multiple datasets to answer the questions mentioned above we
 > This dataset consists of key metrics related to energy consumption.
 
 ## Methods
-We implemented three different types of Visualizations:
+The app has been split into three pages. The methods for each page have been described below:
 
-1)  **Energy Consumptions and Co2 emissions**
+1)  **Energy Consumption and CO2 emissions**
 
 2)  **Energy Consumption Prediction**
 
 3)  **Climate Change Impact**
+
+**1) ENERGY COMSUMPTION AND CO2 emissions**
+
+Datasets used: primary-energy-source-bar.csv, population-past-future.csv, and co2-emissions-by-fuel-line.csv.
+
+1. **Data Cleaning**: All three datasets have data for each country by year. However, the data for many countries is missing for some years. Instead of dropping these countries, we replicated the last available data point for that country for every column with missing values for later years (using the `ffill` function from `pandas`)
+
+2. **Data Filtering**: All these datasets have datapoints at various levels of groupings and not just countries. So data points are available for Europe, Asia, OECD countries, etc. All non-country regions were filtered out of the datasets.
+
+3. **Visualizations and Interactions**: All the visualizations have been described in depth in the **Results** section. The methods used for presenting these are highlighted below:
+    - The core visualizations of this page are the pair of world maps --- one with net energy consumption by country and the other with per capita consumption. The per capita energy consumption was calculated by dividing the net consumption by the population number from the population dataset. The user can click on a country on the world map to see a comparison in terms of net energy consumption vs per capita energy consumption. Furthermore, this visualization is linked to the visualizations described next.
+    - Fuel mix, CO2 emissions by fuel, and CO2 emissions: Clicking on a country changes the data being shown by these visualizations. The fuel mix pie chart simply shows the contribution of each fuel type towards the energy consumption of the selected country. We take the CO2 emission per capita by fuel type of this country and apply that to the population of the entire world for the next two visualizations. The net CO2 emissions chart shows a comparison between the net CO2 emissions given the living standard of this country applied to the world vs the current net CO2 emissions of the world.  
+
 
 **2) ENERGY CONSUMPTION PREDICTION**
 
@@ -140,24 +152,24 @@ We performed a total of 4 detailed analyses of the following:
 
  We used a similar pipeline in order to perform all the above analysis of electricity demand and generation. The detailed methodology for the same is listed as follows:
 
-1.  User Interaction- The design on our dashboard involves a
+1.  **User Interaction** - The design on our dashboard involves a
     selection box for country selection. The user selects a country from
     a list of all countries.
 
-2.  Data Filtering - The data is filtered based on the user
+2.  **Data Filtering** - The data is filtered based on the user
     selection.
 
-3.  Data Cleaning - The data is cleaned by dropping N/A values
+3.  **Data Cleaning** - The data is cleaned by dropping N/A values
     for both electricity demand and generation columns.
 
-4.  Model Training - A linear regression model is fit on the
+4.  **Model Training** - A linear regression model is fit on the
     years vs electricity demand and years vs electricity generation.
 
-5.  Prediction -  next 10 years - The linear regression model is
+5.  **Prediction** -  next 10 years - The linear regression model is
     then used to predict the electricity demand and generation values
     for the next 10 years.
 
-6.  Visualization - The raw year-wise electricity generation and
+6.  **Visualization** - The raw year-wise electricity generation and
     electricity demand power is then plotted along with the regression
     plots for the same.
 
@@ -184,7 +196,7 @@ reduce the C02 levels
 
 
 ## Results
-**Energy Consumptions and Co2 emissions**
+**Energy Consumption and CO2 emissions**
 
 Debates about climate change at the diplomatic level often break down to assigning blame for who is responsible for climate change. While working with the implicit assumption that ultimately, climate change is a global problem, we wanted to build a visualization to let users explore this aspect on their own. 
 At its core, human activity that causes climate change can be quantified in terms of energy consumption. We used energy consumption as a metric to identify from which countries climate change is being driven the most. The first visualization shows net energy consumption as a heat map:
