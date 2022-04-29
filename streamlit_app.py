@@ -504,7 +504,7 @@ def energy_forecast():
 
 @st.cache
 def get_dataset1():
-    return pd.read_csv("./data/Dataset1_cleaned.csv").dropna()
+    return pd.read_csv("./data/Dataset1_cleaned_2.csv").dropna()
 
 @st.cache
 def get_emissions():
@@ -559,8 +559,8 @@ def climate_change_impact():
     ).add_selection(selector)
 
     hists = bars_climateChange2.mark_bar(opacity=0.5, thickness=100).encode(
-        x=alt.X('Adaptation action'),
-        y=alt.Y('Population'),
+        y=alt.Y('Adaptation action'),
+        x=alt.X('Population'),
         tooltip='Population'
     ).transform_filter(
         selector
