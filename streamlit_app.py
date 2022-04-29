@@ -16,11 +16,11 @@ st.markdown(
     """
     <style>
     [data-testid="stSidebar"][aria-expanded="true"] > div:first-child {
-        width: 300px;
+        width: 280px;
     }
     [data-testid="stSidebar"][aria-expanded="false"] > div:first-child {
-        width: 300px;
-        margin-left: -300px;
+        width: 280px;
+        margin-left: -280px;
     }
     </style>
     """,
